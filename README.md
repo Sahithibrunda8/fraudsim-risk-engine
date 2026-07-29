@@ -78,6 +78,22 @@ docker build -t fraud-api .
 docker run -p 8000:8000 fraud-api
 ```
 
+## Live API
+
+Deployed on Render (free tier — the first request after a period of inactivity can take 30-60 seconds while the instance spins back up, everything after that is fast):
+
+**https://fraudsim-risk-engine.onrender.com/docs**
+
+Verified live response for the example above:
+```json
+{
+  "risk_score": 0.9998,
+  "flagged": true,
+  "threshold_used": 0.82,
+  "top_reasons": ["time of day", "distance from customer's usual location", "transaction amount"]
+}
+```
+
 ## Example request/response
 
 ```json

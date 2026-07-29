@@ -1,121 +1,97 @@
-# Fraud Detection System — Synthetic Transaction Simulation & Real-Time Risk Scoring
+# Fraud Detection System (with a self-built transaction simulator)
 
-## Problem Statement
+## Why I built this
 
-Card and account fraud typically makes up less than 1-2% of all transactions, which
-makes it a genuinely hard classification problem — accuracy is meaningless when 99%
-of a "predict no fraud" model is already correct by default. This project builds a
-fraud detection system from the ground up: a synthetic transaction generator (so the
-imbalance ratio and fraud patterns are fully controlled and explainable), a
-cost-sensitive classifier, an explainability layer, and a real-time scoring API with
-drift monitoring.
+Most fraud detection projects online use the same one or two Kaggle datasets (IEEE-CIS or PaySim). I wanted something I could fully explain in an interview — where I understand not just the model, but where every row of data came from and why.
 
-The goal isn't just "detect fraud" — it's to catch fraud while minimizing the cost of
-false alarms that annoy genuine customers, and to be able to explain *why* any given
-transaction was flagged.
+So instead of downloading a dataset, I built my own transaction simulator. It generates synthetic customers, each with their own spending habits, and then injects three realistic fraud patterns into that data at a controlled rate (~1%, close to real-world fraud prevalence). This meant I got to make every decision myself: how imbalanced the data should be, what fraud actually looks like in the features, and later, how to simulate concept drift for the monitoring piece.
 
-## Why Self-Built Data Instead of a Public Dataset
+## The problem
 
-Most fraud detection portfolios reuse the same one or two public Kaggle datasets
-(IEEE-CIS, PaySim). Instead, this project uses a custom simulator
-(`data/simulator.py`) that generates:
-- 2,000 synthetic customers, each with a stable spending profile (average
-  transaction size, active hours, home location, preferred merchant categories)
-- A month of normal transactions per customer following their own pattern
-- Three labeled fraud patterns injected at a realistic ~1% rate:
-  - **Card testing** — a burst of small transactions across different merchants in
-    a short window (attacker verifying a stolen card works)
-  - **Account takeover** — a sudden high-value transaction spike at an hour outside
-    the customer's normal activity
-  - **Geo-impossible** — two transactions from the same customer too far apart
-    geographically to be physically possible in the time between them
+Fraud is a genuinely hard classification problem because it's so rare — under 1-2% of transactions in most real systems. A model that just predicts "not fraud" every time would already be ~99% accurate and completely useless. So the real work here wasn't just training a classifier, it was:
+- picking the right metric (precision-recall, not accuracy)
+- deciding what threshold actually makes business sense (catching more fraud costs you in false alarms — so where's the right tradeoff?)
+- being able to explain *why* a transaction got flagged, not just that it did
 
-Building the generator meant every design decision — the imbalance ratio, the fraud
-patterns, the noise in "normal" behavior — is something I chose and can explain,
-rather than inheriting from someone else's dataset.
+## The simulator
 
-**Verified output of the simulator (30 days, 2,000 customers, seed=42):**
-- Total transactions: 151,402
-- Fraud transactions: 1,475 (0.97%)
-- Breakdown: card_testing — 946, geo_impossible — 302, account_takeover — 227
+`data/simulator.py` creates 2,000 synthetic customers, each with:
+- a home location
+- an average spend and typical spending range
+- active hours (most people don't shop at 3am)
+- a few preferred merchant categories
 
-## Architecture
+Then it generates a month of normal transactions per customer, and injects three fraud patterns:
+- **Card testing** — a burst of small transactions across different merchants in a short window (this is what it looks like when someone's testing whether a stolen card number still works)
+- **Account takeover** — a sudden high-value transaction at an hour way outside the customer's normal pattern
+- **Geo-impossible transactions** — two transactions from the same customer, too far apart geographically to be physically possible given the time between them
 
-```
-simulator.py → transactions.csv → EDA → feature engineering → model training
-                                                                      │
-                                                                      ▼
-                                                          fraud_model.pkl
-                                                                      │
-                                                                      ▼
-                                            FastAPI (/predict) ──► risk score + SHAP explanation
-                                                                      │
-                                                                      ▼
-                                         Evidently drift check (month 1 vs. simulated month 2)
-```
+Running it gives:
+- 151,402 transactions total
+- 1,475 fraud transactions (0.97%)
+- broken down: 946 card testing, 302 geo-impossible, 227 account takeover
 
-## Key Results
+## What I did with the data
 
-*(All numbers below are real output from running this pipeline, not estimates.)*
+1. **Feature engineering** — built a profile for each customer from their transaction history (average spend, home location, typical hours, common categories), then engineered features like how far a transaction is from home, how the amount compares to the customer's usual spend, and whether the merchant category is new for them. This same feature code is shared between training and the live API, so there's no mismatch between how the model was trained and how it scores real transactions.
 
-- **Model & metric:** XGBoost classifier — **Precision-Recall AUC: 0.867** on a
-  time-based holdout (last 20% of days, never seen during training). Accuracy is
-  not used as the primary metric since it's uninformative at ~1% fraud prevalence
-  (a model that predicts "never fraud" would already be 99% accurate).
-- **Imbalance handling approach:** Class weighting via XGBoost's `scale_pos_weight`
-  (~102x), rather than SMOTE — simpler and more defensible than generating
-  synthetic oversampled fraud on top of already-synthetic data.
-- **Cost-sensitive threshold:** 0.82, chosen by minimizing an assumed cost of
-  ₹5,000 per missed fraud vs. ₹50 per false alarm (a stated assumption, not a
-  measured business figure — swap in real numbers in a real deployment). At this
-  threshold: **88.5% recall, 66.1% precision** on fraud cases.
-- **Explainability:** Each flagged transaction returns its top 3 contributing
-  features via SHAP, in plain language (e.g. "distance from customer's usual
-  location," "transaction at an unusual hour"). Verified against real fraud
-  examples — geo-impossible fraud correctly surfaces distance as the top reason,
-  card testing correctly surfaces amount and unfamiliar category.
-- **Drift check:** Simulated a "month 2" with a shifted fraud rate (0.93% → 2.36%)
-  and pattern mix. Monitoring correctly flagged drift on 3 of 6 features (50%),
-  with the strongest shifts in `amount_vs_avg` and `distance_from_home_km` — see
-  `monitoring/drift_report.html`.
+2. **Handling the imbalance** — I went with class weighting (XGBoost's `scale_pos_weight`, around 102x) rather than SMOTE. I thought about this one — SMOTE would mean generating synthetic oversampled fraud on top of data that's already synthetic, which felt like a layer of made-up data on made-up data. Class weighting is simpler and I can actually defend it.
 
-## How to Run It Locally
+3. **Model** — XGBoost, evaluated on precision-recall AUC (0.867 on a time-based holdout — trained on the first 24 days, tested on the last 6, so nothing "future" leaks into training).
+
+4. **Threshold — not the default 0.5** — I picked the threshold that minimizes actual cost, not the one that maximizes F1. I assumed a cost of ₹5,000 for a missed fraud case versus ₹50 for annoying a real customer with a false alarm (these are stated assumptions, not real company numbers — in an actual job I'd use real figures). That landed the threshold at 0.82, catching 88.5% of fraud with 66.1% precision.
+
+5. **Explainability** — every flagged transaction comes back with the top 3 reasons it was flagged, using SHAP, but translated into plain English instead of a SHAP plot. I tested this against real fraud examples and it lines up with what you'd expect — geo-impossible fraud gets flagged mainly for distance from the customer's usual location, card testing gets flagged for amount and unfamiliar merchant category.
+
+6. **Drift check** — since I control the simulator, I generated a second "month 2" dataset with a different fraud rate (2.36% instead of 0.93%) and pattern mix, and ran it through Evidently to see if monitoring would actually catch the shift. It flagged drift on 3 of 6 features, with the biggest shifts in transaction amount relative to customer average and distance from home — which makes sense given what changed.
+
+7. **Deployment** — wrapped the whole thing in a FastAPI app that takes a transaction and returns a risk score, a flag, and the explanation. Containerized it with Docker and tested it running both locally and inside the container — same results both ways.
+
+## Results, for real
+
+- PR-AUC: 0.867
+- At the chosen threshold (0.82): 88.5% recall, 66.1% precision on fraud cases
+- Verified example — a transaction at 3am, far from the customer's home, for a large amount, scored 0.9998 risk and got flagged for "time of day" and "distance from customer's usual location"
+- A transaction matching the customer's actual spending profile scored 0.05 risk and wasn't flagged
+
+## How to run it
 
 ```bash
-# 1. Clone and set up environment
-git clone <your-repo-url>
-cd fraud-detection-system
+git clone https://github.com/Sahithibrunda8/fraudsim-risk-engine.git
+cd fraudsim-risk-engine
 python -m venv venv
-venv\Scripts\activate          # Windows
+venv\Scripts\activate
 pip install -r requirements.txt
 
-# 2. Generate the dataset
-python data/simulator.py
+python data/simulator.py      # generates the dataset
+python src/train.py           # trains the model
+python notebooks/01_eda.py    # regenerates EDA plots
+python notebooks/05_drift_check.py   # regenerates the drift report
 
-# 3. Train the model
-python src/train.py
-
-# 4. Run the API locally
 uvicorn api.main:app --reload
-# Visit http://localhost:8000/docs for the interactive Swagger UI
+# visit http://localhost:8000/docs
 ```
 
-## Live API
+Or with Docker:
+```bash
+docker build -t fraud-api .
+docker run -p 8000:8000 fraud-api
+```
 
-- **Endpoint:** [TBD — filled in after step 12 deployment]
-- **Example request:**
+## Example request/response
+
 ```json
 POST /predict
 {
   "customer_id": "CUST_00042",
-  "amount": 4500,
+  "amount": 90000,
   "merchant_category": "electronics",
-  "hour": 3,
-  "lat": 19.07,
-  "lon": 72.87
+  "timestamp": "2026-01-05T03:00:00",
+  "lat": 28.6,
+  "lon": 77.2
 }
 ```
-- **Example response (verified real output for a genuinely suspicious transaction):**
+
 ```json
 {
   "risk_score": 0.9998,
@@ -125,29 +101,27 @@ POST /predict
 }
 ```
 
-## What I'd Do With More Time
+## What I'd add with more time
 
-- Add a fourth fraud pattern (merchant-side collusion / repeated refund abuse)
-- Extend the simulator to model seasonal spending shifts, not just daily patterns
-- Add a proper monitoring dashboard (Streamlit or Grafana) instead of a static
-  Evidently HTML report
-- Retrain automatically when drift crosses a threshold, rather than a manual check
+- A fourth fraud pattern — repeated refund abuse or merchant-side collusion
+- Seasonal spending shifts in the simulator, not just daily patterns
+- A real dashboard instead of a static HTML drift report
+- Automatic retraining triggered when drift crosses a threshold, instead of a manual check
 
-## Project Structure
+## Project structure
 
 ```
-fraud-detection-system/
-├── data/               # simulator + generated datasets
-├── notebooks/          # EDA, modeling, thresholding, explainability, drift
-├── src/                # reusable preprocessing, training, explanation code
+fraudsim-risk-engine/
+├── data/               # simulator + generated dataset
+├── notebooks/          # EDA and drift check scripts
+├── src/                # shared preprocessing, training, explainability
 ├── models/             # trained model artifact
 ├── api/                # FastAPI app
-├── monitoring/         # drift reports
-├── tests/              # API sanity tests
+├── monitoring/         # drift report
+├── tests/               # API tests
 └── Dockerfile
 ```
 
-## Tech Stack
+## Stack
 
-Python, Pandas, NumPy, Faker, Scikit-learn, XGBoost, imbalanced-learn, SHAP,
-Evidently, FastAPI, Docker, GitHub Actions (optional CI/CD)
+Python, Pandas, NumPy, Faker, Scikit-learn, XGBoost, SHAP, Evidently, FastAPI, Docker

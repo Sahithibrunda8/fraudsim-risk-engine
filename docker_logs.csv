@@ -1,0 +1,954 @@
+﻿timestamp,object,message
+2026-07-29T08:41:08.148Z,Project DS2,[internal] load build definition from Dockerfile
+2026-07-29T08:41:08.149Z,Project DS2,[internal] load build definition from Dockerfile
+2026-07-29T08:41:08.584Z,Project DS2,transferring (288 bytes)
+2026-07-29T08:41:08.667Z,Project DS2,[internal] load metadata for docker.io/library/python:3.11-slim
+2026-07-29T08:41:14.370Z,Project DS2,[internal] load .dockerignore
+2026-07-29T08:41:14.370Z,Project DS2,[internal] load .dockerignore
+2026-07-29T08:41:14.623Z,Project DS2,[1/7] FROM docker.io/library/python:3.11-slim@sha256:db3ff2e1800a8581e2c48a27c3995339d47bdf046da21c7627accd3d51053a93
+2026-07-29T08:41:14.625Z,Project DS2,[internal] load build context
+2026-07-29T08:41:14.628Z,Project DS2,[internal] load build context
+2026-07-29T08:41:14.846Z,Project DS2,[1/7] FROM docker.io/library/python:3.11-slim@sha256:db3ff2e1800a8581e2c48a27c3995339d47bdf046da21c7627accd3d51053a93
+2026-07-29T08:41:14.846Z,Project DS2,resolve docker.io/library/python:3.11-slim@sha256:db3ff2e1800a8581e2c48a27c3995339d47bdf046da21c7627accd3d51053a93
+2026-07-29T08:41:14.847Z,Project DS2,[1/7] FROM docker.io/library/python:3.11-slim@sha256:db3ff2e1800a8581e2c48a27c3995339d47bdf046da21c7627accd3d51053a93
+2026-07-29T08:41:15.765Z,Project DS2,[1/7] FROM docker.io/library/python:3.11-slim@sha256:db3ff2e1800a8581e2c48a27c3995339d47bdf046da21c7627accd3d51053a93
+2026-07-29T08:41:18.120Z,Project DS2,transferring (688623 bytes)
+2026-07-29T08:41:20.816Z,Project DS2,sha256:c89b9f64c028c19ba92e195d7589d914b9cd1fc69f3c3dfeb931e93876ac2064 (248/248)
+2026-07-29T08:41:22.254Z,Project DS2,sha256:9775d166087aba0afe5ba9a88859c04c08090e82ae218742d09fec9119e0335d (1293282/1293282)
+2026-07-29T08:41:28.691Z,Project DS2,sha256:6b265b8eae4a26a263eb55546aa430c1eef37032a7cd86393d98c6b779f28319 (14418685/14418685)
+2026-07-29T08:41:33.633Z,Project DS2,sha256:062e450697faa5f02a3a74eba9864ee4d79bc9cfbd65769fc6cdff2c05c6a053 (29780905/29780905)
+2026-07-29T08:41:33.730Z,Project DS2,[1/7] FROM docker.io/library/python:3.11-slim@sha256:db3ff2e1800a8581e2c48a27c3995339d47bdf046da21c7627accd3d51053a93
+2026-07-29T08:42:04.605Z,Project DS2,Collecting pandas>=2.2 (from -r requirements.txt (line 1))
+2026-07-29T08:42:05.483Z,Project DS2,Downloading pandas-3.0.5-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (79 kB)
+2026-07-29T08:42:05.611Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 79.5/79.5 kB 600.0 kB/s eta 0:00:00
+2026-07-29T08:42:05.614Z,Project DS2,
+2026-07-29T08:42:06.950Z,Project DS2,Collecting numpy>=1.26 (from -r requirements.txt (line 2))
+2026-07-29T08:42:06.981Z,Project DS2,Downloading numpy-2.4.6-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+2026-07-29T08:42:07.785Z,Project DS2,Collecting faker>=24.0 (from -r requirements.txt (line 3))
+2026-07-29T08:42:07.843Z,Project DS2,Downloading faker-40.36.0-py3-none-any.whl.metadata (16 kB)
+2026-07-29T08:42:08.278Z,Project DS2,Collecting scikit-learn>=1.4 (from -r requirements.txt (line 4))
+2026-07-29T08:42:08.348Z,Project DS2,Downloading scikit_learn-1.9.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (11 kB)
+2026-07-29T08:42:08.516Z,Project DS2,Collecting xgboost>=2.0 (from -r requirements.txt (line 5))
+2026-07-29T08:42:08.557Z,Project DS2,Downloading xgboost-3.2.0-py3-none-manylinux_2_28_x86_64.whl.metadata (2.1 kB)
+2026-07-29T08:42:08.634Z,Project DS2,Collecting imbalanced-learn>=0.12 (from -r requirements.txt (line 6))
+2026-07-29T08:42:08.677Z,Project DS2,Downloading imbalanced_learn-0.14.2-py3-none-any.whl.metadata (8.9 kB)
+2026-07-29T08:42:09.009Z,Project DS2,Collecting shap>=0.45 (from -r requirements.txt (line 7))
+2026-07-29T08:42:09.045Z,Project DS2,Downloading shap-0.51.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (25 kB)
+2026-07-29T08:42:09.920Z,Project DS2,Collecting fastapi>=0.110 (from -r requirements.txt (line 8))
+2026-07-29T08:42:09.988Z,Project DS2,Downloading fastapi-0.140.13-py3-none-any.whl.metadata (27 kB)
+2026-07-29T08:42:10.199Z,Project DS2,Collecting uvicorn>=0.29 (from -r requirements.txt (line 9))
+2026-07-29T08:42:10.243Z,Project DS2,Downloading uvicorn-0.51.0-py3-none-any.whl.metadata (6.6 kB)
+2026-07-29T08:42:11.501Z,Project DS2,Collecting pydantic>=2.6 (from -r requirements.txt (line 10))
+2026-07-29T08:42:11.656Z,Project DS2,Downloading pydantic-2.13.4-py3-none-any.whl.metadata (109 kB)
+2026-07-29T08:42:11.742Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 109.4/109.4 kB 1.6 MB/s eta 0:00:00
+2026-07-29T08:42:11.743Z,Project DS2,
+2026-07-29T08:42:11.967Z,Project DS2,Collecting httpx>=0.27 (from -r requirements.txt (line 11))
+2026-07-29T08:42:12.006Z,Project DS2,Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+2026-07-29T08:42:12.227Z,Project DS2,Collecting pytest>=8.0 (from -r requirements.txt (line 12))
+2026-07-29T08:42:12.287Z,Project DS2,Downloading pytest-9.1.1-py3-none-any.whl.metadata (7.6 kB)
+2026-07-29T08:42:12.947Z,Project DS2,Collecting matplotlib>=3.8 (from -r requirements.txt (line 13))
+2026-07-29T08:42:13.007Z,Project DS2,Downloading matplotlib-3.11.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (80 kB)
+2026-07-29T08:42:13.064Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 80.3/80.3 kB 39.3 MB/s eta 0:00:00
+2026-07-29T08:42:13.066Z,Project DS2,
+2026-07-29T08:42:13.309Z,Project DS2,Collecting seaborn>=0.13 (from -r requirements.txt (line 14))
+2026-07-29T08:42:13.377Z,Project DS2,Downloading seaborn-0.13.2-py3-none-any.whl.metadata (5.4 kB)
+2026-07-29T08:42:13.809Z,Project DS2,Collecting evidently>=0.4 (from -r requirements.txt (line 15))
+2026-07-29T08:42:13.839Z,Project DS2,Downloading evidently-0.7.21-py3-none-any.whl.metadata (12 kB)
+2026-07-29T08:42:14.059Z,Project DS2,Collecting python-dateutil>=2.8.2 (from pandas>=2.2->-r requirements.txt (line 1))
+2026-07-29T08:42:14.094Z,Project DS2,Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+2026-07-29T08:42:14.854Z,Project DS2,Collecting scipy>=1.10.0 (from scikit-learn>=1.4->-r requirements.txt (line 4))
+2026-07-29T08:42:14.897Z,Project DS2,Downloading scipy-1.17.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+2026-07-29T08:42:14.927Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.1/62.1 kB 2.2 MB/s eta 0:00:00
+2026-07-29T08:42:14.927Z,Project DS2,
+2026-07-29T08:42:15.061Z,Project DS2,Collecting joblib>=1.4.0 (from scikit-learn>=1.4->-r requirements.txt (line 4))
+2026-07-29T08:42:15.109Z,Project DS2,Downloading joblib-1.5.3-py3-none-any.whl.metadata (5.5 kB)
+2026-07-29T08:42:15.338Z,Project DS2,Collecting narwhals>=2.0.1 (from scikit-learn>=1.4->-r requirements.txt (line 4))
+2026-07-29T08:42:15.387Z,Project DS2,Downloading narwhals-2.24.0-py3-none-any.whl.metadata (15 kB)
+2026-07-29T08:42:15.471Z,Project DS2,Collecting threadpoolctl>=3.5.0 (from scikit-learn>=1.4->-r requirements.txt (line 4))
+2026-07-29T08:42:15.532Z,Project DS2,Downloading threadpoolctl-3.6.0-py3-none-any.whl.metadata (13 kB)
+2026-07-29T08:42:15.631Z,Project DS2,Collecting nvidia-nccl-cu12 (from xgboost>=2.0->-r requirements.txt (line 5))
+2026-07-29T08:42:15.687Z,Project DS2,Downloading nvidia_nccl_cu12-2.30.7-py3-none-manylinux_2_18_x86_64.whl.metadata (2.1 kB)
+2026-07-29T08:42:15.889Z,Project DS2,"Collecting sklearn-compat<0.2,>=0.1.6 (from imbalanced-learn>=0.12->-r requirements.txt (line 6))"
+2026-07-29T08:42:15.945Z,Project DS2,Downloading sklearn_compat-0.1.6-py3-none-any.whl.metadata (22 kB)
+2026-07-29T08:42:16.287Z,Project DS2,Collecting tqdm>=4.27.0 (from shap>=0.45->-r requirements.txt (line 7))
+2026-07-29T08:42:16.327Z,Project DS2,Downloading tqdm-4.70.0-py3-none-any.whl.metadata (57 kB)
+2026-07-29T08:42:16.351Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.3/57.3 kB 2.8 MB/s eta 0:00:00
+2026-07-29T08:42:16.352Z,Project DS2,
+2026-07-29T08:42:16.376Z,Project DS2,Requirement already satisfied: packaging>20.9 in /usr/local/lib/python3.11/site-packages (from shap>=0.45->-r requirements.txt (line 7)) (26.2)
+2026-07-29T08:42:16.423Z,Project DS2,Collecting slicer==0.0.8 (from shap>=0.45->-r requirements.txt (line 7))
+2026-07-29T08:42:16.476Z,Project DS2,Downloading slicer-0.0.8-py3-none-any.whl.metadata (4.0 kB)
+2026-07-29T08:42:16.943Z,Project DS2,Collecting numba (from shap>=0.45->-r requirements.txt (line 7))
+2026-07-29T08:42:16.971Z,Project DS2,Downloading numba-0.66.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.7 kB)
+2026-07-29T08:42:17.262Z,Project DS2,Collecting llvmlite (from shap>=0.45->-r requirements.txt (line 7))
+2026-07-29T08:42:17.311Z,Project DS2,Downloading llvmlite-0.48.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (5.0 kB)
+2026-07-29T08:42:17.418Z,Project DS2,Collecting cloudpickle (from shap>=0.45->-r requirements.txt (line 7))
+2026-07-29T08:42:17.473Z,Project DS2,Downloading cloudpickle-3.1.2-py3-none-any.whl.metadata (7.1 kB)
+2026-07-29T08:42:17.593Z,Project DS2,Collecting typing-extensions (from shap>=0.45->-r requirements.txt (line 7))
+2026-07-29T08:42:17.637Z,Project DS2,Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+2026-07-29T08:42:17.858Z,Project DS2,Collecting starlette>=0.46.0 (from fastapi>=0.110->-r requirements.txt (line 8))
+2026-07-29T08:42:17.905Z,Project DS2,Downloading starlette-1.3.1-py3-none-any.whl.metadata (6.4 kB)
+2026-07-29T08:42:18.144Z,Project DS2,Collecting typing-inspection>=0.4.2 (from fastapi>=0.110->-r requirements.txt (line 8))
+2026-07-29T08:42:18.206Z,Project DS2,Downloading typing_inspection-0.4.2-py3-none-any.whl.metadata (2.6 kB)
+2026-07-29T08:42:18.278Z,Project DS2,Collecting annotated-doc>=0.0.2 (from fastapi>=0.110->-r requirements.txt (line 8))
+2026-07-29T08:42:18.331Z,Project DS2,Downloading annotated_doc-0.0.5-py3-none-any.whl.metadata (6.5 kB)
+2026-07-29T08:42:18.473Z,Project DS2,Collecting click>=7.0 (from uvicorn>=0.29->-r requirements.txt (line 9))
+2026-07-29T08:42:18.522Z,Project DS2,Downloading click-8.4.2-py3-none-any.whl.metadata (2.6 kB)
+2026-07-29T08:42:18.602Z,Project DS2,Collecting h11>=0.8 (from uvicorn>=0.29->-r requirements.txt (line 9))
+2026-07-29T08:42:18.639Z,Project DS2,Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+2026-07-29T08:42:18.714Z,Project DS2,Collecting annotated-types>=0.6.0 (from pydantic>=2.6->-r requirements.txt (line 10))
+2026-07-29T08:42:18.752Z,Project DS2,Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+2026-07-29T08:42:21.387Z,Project DS2,Collecting pydantic-core==2.46.4 (from pydantic>=2.6->-r requirements.txt (line 10))
+2026-07-29T08:42:21.414Z,Project DS2,Downloading pydantic_core-2.46.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.6 kB)
+2026-07-29T08:42:21.555Z,Project DS2,Collecting anyio (from httpx>=0.27->-r requirements.txt (line 11))
+2026-07-29T08:42:21.583Z,Project DS2,Downloading anyio-4.14.2-py3-none-any.whl.metadata (4.6 kB)
+2026-07-29T08:42:21.697Z,Project DS2,Collecting certifi (from httpx>=0.27->-r requirements.txt (line 11))
+2026-07-29T08:42:21.769Z,Project DS2,Downloading certifi-2026.7.22-py3-none-any.whl.metadata (2.5 kB)
+2026-07-29T08:42:21.996Z,Project DS2,Collecting httpcore==1.* (from httpx>=0.27->-r requirements.txt (line 11))
+2026-07-29T08:42:22.038Z,Project DS2,Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+2026-07-29T08:42:22.819Z,Project DS2,Collecting idna (from httpx>=0.27->-r requirements.txt (line 11))
+2026-07-29T08:42:23.109Z,Project DS2,Downloading idna-3.18-py3-none-any.whl.metadata (6.1 kB)
+2026-07-29T08:42:23.431Z,Project DS2,Collecting iniconfig>=1.0.1 (from pytest>=8.0->-r requirements.txt (line 12))
+2026-07-29T08:42:23.716Z,Project DS2,Downloading iniconfig-2.3.0-py3-none-any.whl.metadata (2.5 kB)
+2026-07-29T08:42:23.790Z,Project DS2,"Collecting pluggy<2,>=1.5 (from pytest>=8.0->-r requirements.txt (line 12))"
+2026-07-29T08:42:24.024Z,Project DS2,Downloading pluggy-1.6.0-py3-none-any.whl.metadata (4.8 kB)
+2026-07-29T08:42:24.289Z,Project DS2,Collecting pygments>=2.7.2 (from pytest>=8.0->-r requirements.txt (line 12))
+2026-07-29T08:42:24.327Z,Project DS2,Downloading pygments-2.20.0-py3-none-any.whl.metadata (2.5 kB)
+2026-07-29T08:42:24.828Z,Project DS2,Collecting contourpy>=1.0.1 (from matplotlib>=3.8->-r requirements.txt (line 13))
+2026-07-29T08:42:24.946Z,Project DS2,Downloading contourpy-1.3.3-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (5.5 kB)
+2026-07-29T08:42:25.016Z,Project DS2,Collecting cycler>=0.10 (from matplotlib>=3.8->-r requirements.txt (line 13))
+2026-07-29T08:42:25.254Z,Project DS2,Downloading cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+2026-07-29T08:42:26.729Z,Project DS2,Collecting fonttools>=4.28.2 (from matplotlib>=3.8->-r requirements.txt (line 13))
+2026-07-29T08:42:26.763Z,Project DS2,Downloading fonttools-4.63.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (118 kB)
+2026-07-29T08:42:26.797Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 118.7/118.7 kB 4.7 MB/s eta 0:00:00
+2026-07-29T08:42:26.798Z,Project DS2,
+2026-07-29T08:42:27.329Z,Project DS2,Collecting kiwisolver>=1.3.1 (from matplotlib>=3.8->-r requirements.txt (line 13))
+2026-07-29T08:42:27.355Z,Project DS2,Downloading kiwisolver-1.5.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (5.1 kB)
+2026-07-29T08:42:28.054Z,Project DS2,Collecting pillow>=9 (from matplotlib>=3.8->-r requirements.txt (line 13))
+2026-07-29T08:42:28.152Z,Project DS2,Downloading pillow-12.3.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.1 kB)
+2026-07-29T08:42:28.303Z,Project DS2,Collecting pyparsing>=3 (from matplotlib>=3.8->-r requirements.txt (line 13))
+2026-07-29T08:42:28.392Z,Project DS2,Downloading pyparsing-3.3.2-py3-none-any.whl.metadata (5.8 kB)
+2026-07-29T08:42:29.603Z,Project DS2,Collecting cryptography>=43.0.1 (from evidently>=0.4->-r requirements.txt (line 15))
+2026-07-29T08:42:29.661Z,Project DS2,Downloading cryptography-49.0.0-cp311-abi3-manylinux_2_34_x86_64.whl.metadata (4.3 kB)
+2026-07-29T08:42:29.776Z,Project DS2,Collecting deprecation>=2.1.0 (from evidently>=0.4->-r requirements.txt (line 15))
+2026-07-29T08:42:29.814Z,Project DS2,Downloading deprecation-2.1.0-py2.py3-none-any.whl.metadata (4.6 kB)
+2026-07-29T08:42:29.958Z,Project DS2,Collecting dynaconf>=3.2.4 (from evidently>=0.4->-r requirements.txt (line 15))
+2026-07-29T08:42:30.001Z,Project DS2,Downloading dynaconf-3.3.4-py3-none-any.whl.metadata (8.5 kB)
+2026-07-29T08:42:30.168Z,Project DS2,Collecting fsspec>=2024.9.0 (from evidently>=0.4->-r requirements.txt (line 15))
+2026-07-29T08:42:30.200Z,Project DS2,Downloading fsspec-2026.7.0-py3-none-any.whl.metadata (10 kB)
+2026-07-29T08:42:30.289Z,Project DS2,Collecting iterative-telemetry>=0.0.5 (from evidently>=0.4->-r requirements.txt (line 15))
+2026-07-29T08:42:30.353Z,Project DS2,Downloading iterative_telemetry-0.0.10-py3-none-any.whl.metadata (4.1 kB)
+2026-07-29T08:42:30.733Z,Project DS2,Collecting litestar>=2.19.0 (from evidently>=0.4->-r requirements.txt (line 15))
+2026-07-29T08:42:30.771Z,Project DS2,Downloading litestar-2.24.0-py3-none-any.whl.metadata (26 kB)
+2026-07-29T08:42:30.965Z,Project DS2,Collecting nltk>=3.6.7 (from evidently>=0.4->-r requirements.txt (line 15))
+2026-07-29T08:42:31.000Z,Project DS2,Downloading nltk-3.10.0-py3-none-any.whl.metadata (3.2 kB)
+2026-07-29T08:42:31.250Z,Project DS2,Collecting opentelemetry-proto>=1.25.0 (from evidently>=0.4->-r requirements.txt (line 15))
+2026-07-29T08:42:31.314Z,Project DS2,Downloading opentelemetry_proto-1.44.0-py3-none-any.whl.metadata (2.3 kB)
+2026-07-29T08:42:31.563Z,Project DS2,"Collecting plotly<6,>=5.10.0 (from evidently>=0.4->-r requirements.txt (line 15))"
+2026-07-29T08:42:31.636Z,Project DS2,Downloading plotly-5.24.1-py3-none-any.whl.metadata (7.3 kB)
+2026-07-29T08:42:32.020Z,Project DS2,Collecting pyyaml>=6.0.1 (from evidently>=0.4->-r requirements.txt (line 15))
+2026-07-29T08:42:32.052Z,Project DS2,Downloading pyyaml-6.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+2026-07-29T08:42:32.167Z,Project DS2,Collecting requests>=2.32.0 (from evidently>=0.4->-r requirements.txt (line 15))
+2026-07-29T08:42:32.312Z,Project DS2,Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+2026-07-29T08:42:32.726Z,Project DS2,Collecting rich>=13 (from evidently>=0.4->-r requirements.txt (line 15))
+2026-07-29T08:42:32.928Z,Project DS2,Downloading rich-15.0.0-py3-none-any.whl.metadata (18 kB)
+2026-07-29T08:42:33.413Z,Project DS2,Collecting statsmodels>=0.14.0 (from evidently>=0.4->-r requirements.txt (line 15))
+2026-07-29T08:42:33.450Z,Project DS2,Downloading statsmodels-0.14.6-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (9.5 kB)
+2026-07-29T08:42:33.771Z,Project DS2,Collecting typer>=0.3 (from evidently>=0.4->-r requirements.txt (line 15))
+2026-07-29T08:42:33.819Z,Project DS2,Downloading typer-0.27.0-py3-none-any.whl.metadata (15 kB)
+2026-07-29T08:42:33.912Z,Project DS2,Collecting typing-inspect>=0.9.0 (from evidently>=0.4->-r requirements.txt (line 15))
+2026-07-29T08:42:34.154Z,Project DS2,Downloading typing_inspect-0.9.0-py3-none-any.whl.metadata (1.5 kB)
+2026-07-29T08:42:34.860Z,Project DS2,Collecting ujson>=5.4.0 (from evidently>=0.4->-r requirements.txt (line 15))
+2026-07-29T08:42:34.902Z,Project DS2,Downloading ujson-5.13.0-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (10.0 kB)
+2026-07-29T08:42:35.185Z,Project DS2,Collecting urllib3>=1.26.19 (from evidently>=0.4->-r requirements.txt (line 15))
+2026-07-29T08:42:35.380Z,Project DS2,Downloading urllib3-2.7.0-py3-none-any.whl.metadata (6.9 kB)
+2026-07-29T08:42:35.748Z,Project DS2,Collecting uuid6>=2024.7.10 (from evidently>=0.4->-r requirements.txt (line 15))
+2026-07-29T08:42:35.995Z,Project DS2,Downloading uuid6-2025.0.1-py3-none-any.whl.metadata (10 kB)
+2026-07-29T08:42:36.538Z,Project DS2,Collecting watchdog>=3.0.0 (from evidently>=0.4->-r requirements.txt (line 15))
+2026-07-29T08:42:36.585Z,Project DS2,Downloading watchdog-6.0.0-py3-none-manylinux2014_x86_64.whl.metadata (44 kB)
+2026-07-29T08:42:36.615Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 44.3/44.3 kB 1.9 MB/s eta 0:00:00
+2026-07-29T08:42:36.616Z,Project DS2,
+2026-07-29T08:42:37.777Z,Project DS2,Collecting cffi>=2.0.0 (from cryptography>=43.0.1->evidently>=0.4->-r requirements.txt (line 15))
+2026-07-29T08:42:37.817Z,Project DS2,Downloading cffi-2.1.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.5 kB)
+2026-07-29T08:42:38.450Z,Project DS2,Collecting appdirs (from iterative-telemetry>=0.0.5->evidently>=0.4->-r requirements.txt (line 15))
+2026-07-29T08:42:38.629Z,Project DS2,Downloading appdirs-1.4.4-py2.py3-none-any.whl.metadata (9.0 kB)
+2026-07-29T08:42:38.827Z,Project DS2,Collecting filelock (from iterative-telemetry>=0.0.5->evidently>=0.4->-r requirements.txt (line 15))
+2026-07-29T08:42:38.859Z,Project DS2,Downloading filelock-3.32.0-py3-none-any.whl.metadata (2.0 kB)
+2026-07-29T08:42:38.916Z,Project DS2,Collecting distro (from iterative-telemetry>=0.0.5->evidently>=0.4->-r requirements.txt (line 15))
+2026-07-29T08:42:38.957Z,Project DS2,Downloading distro-1.9.0-py3-none-any.whl.metadata (6.8 kB)
+2026-07-29T08:42:39.199Z,Project DS2,Collecting litestar-htmx>=0.4.0 (from litestar>=2.19.0->evidently>=0.4->-r requirements.txt (line 15))
+2026-07-29T08:42:39.388Z,Project DS2,Downloading litestar_htmx-0.5.0-py3-none-any.whl.metadata (1.9 kB)
+2026-07-29T08:42:40.008Z,Project DS2,Collecting msgspec>=0.18.2 (from litestar>=2.19.0->evidently>=0.4->-r requirements.txt (line 15))
+2026-07-29T08:42:40.298Z,Project DS2,Downloading msgspec-0.21.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (5.8 kB)
+2026-07-29T08:42:41.695Z,Project DS2,Collecting multidict>=6.0.2 (from litestar>=2.19.0->evidently>=0.4->-r requirements.txt (line 15))
+2026-07-29T08:42:41.850Z,Project DS2,Downloading multidict-6.7.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (5.3 kB)
+2026-07-29T08:42:42.138Z,Project DS2,Collecting multipart>=1.2.0 (from litestar>=2.19.0->evidently>=0.4->-r requirements.txt (line 15))
+2026-07-29T08:42:42.169Z,Project DS2,Downloading multipart-2.0.0-py3-none-any.whl.metadata (4.5 kB)
+2026-07-29T08:42:42.259Z,Project DS2,Collecting polyfactory>=2.6.3 (from litestar>=2.19.0->evidently>=0.4->-r requirements.txt (line 15))
+2026-07-29T08:42:42.308Z,Project DS2,Downloading polyfactory-3.3.0-py3-none-any.whl.metadata (27 kB)
+2026-07-29T08:42:42.432Z,Project DS2,Collecting rich-click (from litestar>=2.19.0->evidently>=0.4->-r requirements.txt (line 15))
+2026-07-29T08:42:42.463Z,Project DS2,Downloading rich_click-1.9.8-py3-none-any.whl.metadata (8.7 kB)
+2026-07-29T08:42:42.521Z,Project DS2,Collecting sniffio>=1.3.1 (from litestar>=2.19.0->evidently>=0.4->-r requirements.txt (line 15))
+2026-07-29T08:42:42.567Z,Project DS2,Downloading sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)
+2026-07-29T08:42:43.006Z,Project DS2,Collecting defusedxml (from nltk>=3.6.7->evidently>=0.4->-r requirements.txt (line 15))
+2026-07-29T08:42:43.036Z,Project DS2,Downloading defusedxml-0.7.1-py2.py3-none-any.whl.metadata (32 kB)
+2026-07-29T08:42:44.511Z,Project DS2,Collecting regex>=2021.8.3 (from nltk>=3.6.7->evidently>=0.4->-r requirements.txt (line 15))
+2026-07-29T08:42:44.574Z,Project DS2,Downloading regex-2026.7.19-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (40 kB)
+2026-07-29T08:42:44.590Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 40.5/40.5 kB 9.9 MB/s eta 0:00:00
+2026-07-29T08:42:44.591Z,Project DS2,
+2026-07-29T08:42:45.266Z,Project DS2,"Collecting protobuf<8.0,>=5.0 (from opentelemetry-proto>=1.25.0->evidently>=0.4->-r requirements.txt (line 15))"
+2026-07-29T08:42:45.310Z,Project DS2,Downloading protobuf-7.35.1-cp310-abi3-manylinux2014_x86_64.whl.metadata (595 bytes)
+2026-07-29T08:42:45.882Z,Project DS2,Collecting pyarrow>=13.0.0 (from pandas[parquet]>=1.3.5->evidently>=0.4->-r requirements.txt (line 15))
+2026-07-29T08:42:45.975Z,Project DS2,Downloading pyarrow-25.0.0-cp311-cp311-manylinux_2_28_x86_64.whl.metadata (3.0 kB)
+2026-07-29T08:42:46.132Z,Project DS2,"Collecting tenacity>=6.2.0 (from plotly<6,>=5.10.0->evidently>=0.4->-r requirements.txt (line 15))"
+2026-07-29T08:42:46.158Z,Project DS2,Downloading tenacity-9.1.4-py3-none-any.whl.metadata (1.2 kB)
+2026-07-29T08:42:46.315Z,Project DS2,Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas>=2.2->-r requirements.txt (line 1))
+2026-07-29T08:42:46.345Z,Project DS2,Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+2026-07-29T08:42:46.789Z,Project DS2,"Collecting charset_normalizer<4,>=2 (from requests>=2.32.0->evidently>=0.4->-r requirements.txt (line 15))"
+2026-07-29T08:42:46.838Z,Project DS2,Downloading charset_normalizer-3.4.9-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (41 kB)
+2026-07-29T08:42:46.846Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 41.7/41.7 kB 51.8 MB/s eta 0:00:00
+2026-07-29T08:42:46.848Z,Project DS2,
+2026-07-29T08:42:47.053Z,Project DS2,Collecting markdown-it-py>=2.2.0 (from rich>=13->evidently>=0.4->-r requirements.txt (line 15))
+2026-07-29T08:42:47.097Z,Project DS2,Downloading markdown_it_py-4.2.0-py3-none-any.whl.metadata (7.4 kB)
+2026-07-29T08:42:47.614Z,Project DS2,Collecting patsy>=0.5.6 (from statsmodels>=0.14.0->evidently>=0.4->-r requirements.txt (line 15))
+2026-07-29T08:42:47.675Z,Project DS2,Downloading patsy-1.0.2-py2.py3-none-any.whl.metadata (3.6 kB)
+2026-07-29T08:42:47.964Z,Project DS2,Collecting shellingham>=1.3.0 (from typer>=0.3->evidently>=0.4->-r requirements.txt (line 15))
+2026-07-29T08:42:47.991Z,Project DS2,Downloading shellingham-1.5.4-py2.py3-none-any.whl.metadata (3.5 kB)
+2026-07-29T08:42:48.139Z,Project DS2,Collecting mypy-extensions>=0.3.0 (from typing-inspect>=0.9.0->evidently>=0.4->-r requirements.txt (line 15))
+2026-07-29T08:42:48.217Z,Project DS2,Downloading mypy_extensions-1.1.0-py3-none-any.whl.metadata (1.1 kB)
+2026-07-29T08:42:48.533Z,Project DS2,Collecting httptools>=0.8.0 (from uvicorn[standard]>=0.22.0->evidently>=0.4->-r requirements.txt (line 15))
+2026-07-29T08:42:48.580Z,Project DS2,Downloading httptools-0.8.0-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (3.5 kB)
+2026-07-29T08:42:48.712Z,Project DS2,Collecting python-dotenv>=0.13 (from uvicorn[standard]>=0.22.0->evidently>=0.4->-r requirements.txt (line 15))
+2026-07-29T08:42:48.747Z,Project DS2,Downloading python_dotenv-1.2.2-py3-none-any.whl.metadata (27 kB)
+2026-07-29T08:42:48.896Z,Project DS2,Collecting uvloop>=0.15.1 (from uvicorn[standard]>=0.22.0->evidently>=0.4->-r requirements.txt (line 15))
+2026-07-29T08:42:48.932Z,Project DS2,Downloading uvloop-0.22.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (4.9 kB)
+2026-07-29T08:42:49.531Z,Project DS2,Collecting watchfiles>=0.20 (from uvicorn[standard]>=0.22.0->evidently>=0.4->-r requirements.txt (line 15))
+2026-07-29T08:42:49.569Z,Project DS2,Downloading watchfiles-1.2.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.9 kB)
+2026-07-29T08:42:49.918Z,Project DS2,Collecting websockets>=13.0 (from uvicorn[standard]>=0.22.0->evidently>=0.4->-r requirements.txt (line 15))
+2026-07-29T08:42:49.983Z,Project DS2,Downloading websockets-16.1.1-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (6.8 kB)
+2026-07-29T08:42:50.455Z,Project DS2,Collecting pycparser (from cffi>=2.0.0->cryptography>=43.0.1->evidently>=0.4->-r requirements.txt (line 15))
+2026-07-29T08:42:50.543Z,Project DS2,Downloading pycparser-3.0-py3-none-any.whl.metadata (8.2 kB)
+2026-07-29T08:42:50.838Z,Project DS2,Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=13->evidently>=0.4->-r requirements.txt (line 15))
+2026-07-29T08:42:50.875Z,Project DS2,Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+2026-07-29T08:42:51.972Z,Project DS2,Downloading pandas-3.0.5-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (11.3 MB)
+2026-07-29T08:42:53.675Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.3/11.3 MB 7.2 MB/s eta 0:00:00
+2026-07-29T08:42:53.676Z,Project DS2,
+2026-07-29T08:42:53.707Z,Project DS2,Downloading numpy-2.4.6-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.9 MB)
+2026-07-29T08:42:56.008Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.9/16.9 MB 8.1 MB/s eta 0:00:00
+2026-07-29T08:42:56.009Z,Project DS2,
+2026-07-29T08:42:56.052Z,Project DS2,Downloading faker-40.36.0-py3-none-any.whl (2.1 MB)
+2026-07-29T08:42:56.326Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 7.7 MB/s eta 0:00:00
+2026-07-29T08:42:56.326Z,Project DS2,
+2026-07-29T08:42:56.446Z,Project DS2,Downloading scikit_learn-1.9.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (9.3 MB)
+2026-07-29T08:42:57.638Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.3/9.3 MB 7.8 MB/s eta 0:00:00
+2026-07-29T08:42:57.638Z,Project DS2,
+2026-07-29T08:42:57.670Z,Project DS2,Downloading xgboost-3.2.0-py3-none-manylinux_2_28_x86_64.whl (131.7 MB)
+2026-07-29T08:43:24.181Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 131.7/131.7 MB 6.7 MB/s eta 0:00:00
+2026-07-29T08:43:24.181Z,Project DS2,
+2026-07-29T08:43:24.220Z,Project DS2,Downloading imbalanced_learn-0.14.2-py3-none-any.whl (236 kB)
+2026-07-29T08:43:24.261Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 236.1/236.1 kB 7.6 MB/s eta 0:00:00
+2026-07-29T08:43:24.261Z,Project DS2,
+2026-07-29T08:43:24.291Z,Project DS2,Downloading shap-0.51.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (1.1 MB)
+2026-07-29T08:43:24.478Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 5.9 MB/s eta 0:00:00
+2026-07-29T08:43:24.484Z,Project DS2,
+2026-07-29T08:43:24.520Z,Project DS2,Downloading slicer-0.0.8-py3-none-any.whl (15 kB)
+2026-07-29T08:43:24.556Z,Project DS2,Downloading fastapi-0.140.13-py3-none-any.whl (131 kB)
+2026-07-29T08:43:24.585Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 131.2/131.2 kB 7.0 MB/s eta 0:00:00
+2026-07-29T08:43:24.587Z,Project DS2,
+2026-07-29T08:43:24.635Z,Project DS2,Downloading uvicorn-0.51.0-py3-none-any.whl (73 kB)
+2026-07-29T08:43:24.651Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 73.2/73.2 kB 10.2 MB/s eta 0:00:00
+2026-07-29T08:43:24.651Z,Project DS2,
+2026-07-29T08:43:24.682Z,Project DS2,Downloading pydantic-2.13.4-py3-none-any.whl (472 kB)
+2026-07-29T08:43:24.769Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 472.3/472.3 kB 5.7 MB/s eta 0:00:00
+2026-07-29T08:43:24.771Z,Project DS2,
+2026-07-29T08:43:24.802Z,Project DS2,Downloading pydantic_core-2.46.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.1 MB)
+2026-07-29T08:43:25.076Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 7.8 MB/s eta 0:00:00
+2026-07-29T08:43:25.076Z,Project DS2,
+2026-07-29T08:43:25.133Z,Project DS2,Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+2026-07-29T08:43:25.152Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 73.5/73.5 kB 9.6 MB/s eta 0:00:00
+2026-07-29T08:43:25.190Z,Project DS2,Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+2026-07-29T08:43:25.225Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.8/78.8 kB 69.0 MB/s eta 0:00:00
+2026-07-29T08:43:25.226Z,Project DS2,
+2026-07-29T08:43:25.259Z,Project DS2,Downloading pytest-9.1.1-py3-none-any.whl (386 kB)
+2026-07-29T08:43:25.329Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 386.5/386.5 kB 6.1 MB/s eta 0:00:00
+2026-07-29T08:43:25.330Z,Project DS2,
+2026-07-29T08:43:25.367Z,Project DS2,Downloading matplotlib-3.11.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (10.0 MB)
+2026-07-29T08:43:26.789Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.0/10.0 MB 7.1 MB/s eta 0:00:00
+2026-07-29T08:43:26.790Z,Project DS2,
+2026-07-29T08:43:26.840Z,Project DS2,Downloading seaborn-0.13.2-py3-none-any.whl (294 kB)
+2026-07-29T08:43:26.899Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 294.9/294.9 kB 5.5 MB/s eta 0:00:00
+2026-07-29T08:43:26.900Z,Project DS2,
+2026-07-29T08:43:26.939Z,Project DS2,Downloading evidently-0.7.21-py3-none-any.whl (11.7 MB)
+2026-07-29T08:43:28.710Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.7/11.7 MB 7.2 MB/s eta 0:00:00
+2026-07-29T08:43:28.711Z,Project DS2,
+2026-07-29T08:43:28.757Z,Project DS2,Downloading annotated_doc-0.0.5-py3-none-any.whl (5.3 kB)
+2026-07-29T08:43:28.789Z,Project DS2,Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+2026-07-29T08:43:28.831Z,Project DS2,Downloading certifi-2026.7.22-py3-none-any.whl (136 kB)
+2026-07-29T08:43:28.856Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 137.0/137.0 kB 7.0 MB/s eta 0:00:00
+2026-07-29T08:43:28.859Z,Project DS2,
+2026-07-29T08:43:28.892Z,Project DS2,Downloading click-8.4.2-py3-none-any.whl (119 kB)
+2026-07-29T08:43:28.925Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 119.2/119.2 kB 3.9 MB/s eta 0:00:00
+2026-07-29T08:43:28.925Z,Project DS2,
+2026-07-29T08:43:28.961Z,Project DS2,Downloading contourpy-1.3.3-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (355 kB)
+2026-07-29T08:43:29.019Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 355.2/355.2 kB 7.2 MB/s eta 0:00:00
+2026-07-29T08:43:29.022Z,Project DS2,
+2026-07-29T08:43:29.062Z,Project DS2,Downloading cryptography-49.0.0-cp311-abi3-manylinux_2_34_x86_64.whl (4.7 MB)
+2026-07-29T08:43:29.772Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.7/4.7 MB 6.8 MB/s eta 0:00:00
+2026-07-29T08:43:29.772Z,Project DS2,
+2026-07-29T08:43:29.820Z,Project DS2,Downloading cycler-0.12.1-py3-none-any.whl (8.3 kB)
+2026-07-29T08:43:29.867Z,Project DS2,Downloading deprecation-2.1.0-py2.py3-none-any.whl (11 kB)
+2026-07-29T08:43:29.908Z,Project DS2,Downloading dynaconf-3.3.4-py3-none-any.whl (271 kB)
+2026-07-29T08:43:29.975Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 271.2/271.2 kB 5.1 MB/s eta 0:00:00
+2026-07-29T08:43:29.976Z,Project DS2,
+2026-07-29T08:43:30.031Z,Project DS2,Downloading fonttools-4.63.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (5.1 MB)
+2026-07-29T08:43:30.741Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.1/5.1 MB 7.2 MB/s eta 0:00:00
+2026-07-29T08:43:30.742Z,Project DS2,
+2026-07-29T08:43:30.803Z,Project DS2,Downloading fsspec-2026.7.0-py3-none-any.whl (206 kB)
+2026-07-29T08:43:30.834Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 206.6/206.6 kB 9.4 MB/s eta 0:00:00
+2026-07-29T08:43:30.835Z,Project DS2,
+2026-07-29T08:43:30.866Z,Project DS2,Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+2026-07-29T08:43:30.965Z,Project DS2,Downloading iniconfig-2.3.0-py3-none-any.whl (7.5 kB)
+2026-07-29T08:43:31.084Z,Project DS2,Downloading iterative_telemetry-0.0.10-py3-none-any.whl (10 kB)
+2026-07-29T08:43:31.119Z,Project DS2,Downloading joblib-1.5.3-py3-none-any.whl (309 kB)
+2026-07-29T08:43:31.230Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 309.1/309.1 kB 2.9 MB/s eta 0:00:00
+2026-07-29T08:43:31.231Z,Project DS2,
+2026-07-29T08:43:31.270Z,Project DS2,Downloading kiwisolver-1.5.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (1.4 MB)
+2026-07-29T08:43:31.544Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 5.4 MB/s eta 0:00:00
+2026-07-29T08:43:31.545Z,Project DS2,
+2026-07-29T08:43:31.586Z,Project DS2,Downloading litestar-2.24.0-py3-none-any.whl (581 kB)
+2026-07-29T08:43:31.723Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 581.8/581.8 kB 4.6 MB/s eta 0:00:00
+2026-07-29T08:43:31.723Z,Project DS2,
+2026-07-29T08:43:31.755Z,Project DS2,Downloading anyio-4.14.2-py3-none-any.whl (125 kB)
+2026-07-29T08:43:31.788Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 125.8/125.8 kB 5.1 MB/s eta 0:00:00
+2026-07-29T08:43:31.789Z,Project DS2,
+2026-07-29T08:43:31.821Z,Project DS2,Downloading idna-3.18-py3-none-any.whl (65 kB)
+2026-07-29T08:43:31.842Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 65.5/65.5 kB 4.0 MB/s eta 0:00:00
+2026-07-29T08:43:31.842Z,Project DS2,
+2026-07-29T08:43:31.872Z,Project DS2,Downloading narwhals-2.24.0-py3-none-any.whl (461 kB)
+2026-07-29T08:43:31.950Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 461.0/461.0 kB 6.6 MB/s eta 0:00:00
+2026-07-29T08:43:32.042Z,Project DS2,Downloading nltk-3.10.0-py3-none-any.whl (1.7 MB)
+2026-07-29T08:43:32.247Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 8.5 MB/s eta 0:00:00
+2026-07-29T08:43:32.247Z,Project DS2,
+2026-07-29T08:43:32.278Z,Project DS2,Downloading opentelemetry_proto-1.44.0-py3-none-any.whl (72 kB)
+2026-07-29T08:43:32.300Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 72.5/72.5 kB 3.8 MB/s eta 0:00:00
+2026-07-29T08:43:32.301Z,Project DS2,
+2026-07-29T08:43:32.422Z,Project DS2,Downloading pillow-12.3.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (6.9 MB)
+2026-07-29T08:43:33.317Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.9/6.9 MB 7.9 MB/s eta 0:00:00
+2026-07-29T08:43:33.318Z,Project DS2,
+2026-07-29T08:43:33.363Z,Project DS2,Downloading plotly-5.24.1-py3-none-any.whl (19.1 MB)
+2026-07-29T08:43:36.302Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 19.1/19.1 MB 6.0 MB/s eta 0:00:00
+2026-07-29T08:43:36.305Z,Project DS2,
+2026-07-29T08:43:36.336Z,Project DS2,Downloading pluggy-1.6.0-py3-none-any.whl (20 kB)
+2026-07-29T08:43:36.378Z,Project DS2,Downloading pygments-2.20.0-py3-none-any.whl (1.2 MB)
+2026-07-29T08:43:36.584Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 6.2 MB/s eta 0:00:00
+2026-07-29T08:43:36.584Z,Project DS2,
+2026-07-29T08:43:36.619Z,Project DS2,Downloading pyparsing-3.3.2-py3-none-any.whl (122 kB)
+2026-07-29T08:43:36.644Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 122.8/122.8 kB 6.0 MB/s eta 0:00:00
+2026-07-29T08:43:36.645Z,Project DS2,
+2026-07-29T08:43:36.677Z,Project DS2,Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+2026-07-29T08:43:36.716Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 229.9/229.9 kB 6.9 MB/s eta 0:00:00
+2026-07-29T08:43:36.716Z,Project DS2,
+2026-07-29T08:43:36.749Z,Project DS2,Downloading pyyaml-6.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (806 kB)
+2026-07-29T08:43:36.886Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 806.6/806.6 kB 6.1 MB/s eta 0:00:00
+2026-07-29T08:43:36.887Z,Project DS2,
+2026-07-29T08:43:36.940Z,Project DS2,Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+2026-07-29T08:43:36.955Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 73.1/73.1 kB 9.2 MB/s eta 0:00:00
+2026-07-29T08:43:36.956Z,Project DS2,
+2026-07-29T08:43:36.989Z,Project DS2,Downloading rich-15.0.0-py3-none-any.whl (310 kB)
+2026-07-29T08:43:37.060Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 310.7/310.7 kB 4.9 MB/s eta 0:00:00
+2026-07-29T08:43:37.061Z,Project DS2,
+2026-07-29T08:43:37.096Z,Project DS2,Downloading scipy-1.17.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (35.3 MB)
+2026-07-29T08:43:42.134Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.3/35.3 MB 9.7 MB/s eta 0:00:00
+2026-07-29T08:43:42.134Z,Project DS2,
+2026-07-29T08:43:42.334Z,Project DS2,Downloading sklearn_compat-0.1.6-py3-none-any.whl (22 kB)
+2026-07-29T08:43:42.367Z,Project DS2,Downloading starlette-1.3.1-py3-none-any.whl (73 kB)
+2026-07-29T08:43:42.385Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 73.6/73.6 kB 5.6 MB/s eta 0:00:00
+2026-07-29T08:43:42.385Z,Project DS2,
+2026-07-29T08:43:42.427Z,Project DS2,Downloading statsmodels-0.14.6-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (10.4 MB)
+2026-07-29T08:43:43.869Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.4/10.4 MB 7.3 MB/s eta 0:00:00
+2026-07-29T08:43:43.869Z,Project DS2,
+2026-07-29T08:43:43.918Z,Project DS2,Downloading threadpoolctl-3.6.0-py3-none-any.whl (18 kB)
+2026-07-29T08:43:44.016Z,Project DS2,Downloading tqdm-4.70.0-py3-none-any.whl (80 kB)
+2026-07-29T08:43:44.035Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 80.2/80.2 kB 10.8 MB/s eta 0:00:00
+2026-07-29T08:43:44.056Z,Project DS2,
+2026-07-29T08:43:44.099Z,Project DS2,Downloading typer-0.27.0-py3-none-any.whl (122 kB)
+2026-07-29T08:43:44.124Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 122.7/122.7 kB 8.5 MB/s eta 0:00:00
+2026-07-29T08:43:44.125Z,Project DS2,
+2026-07-29T08:43:44.164Z,Project DS2,Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+2026-07-29T08:43:44.176Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.6/45.6 kB 45.3 MB/s eta 0:00:00
+2026-07-29T08:43:44.177Z,Project DS2,
+2026-07-29T08:43:44.220Z,Project DS2,Downloading typing_inspect-0.9.0-py3-none-any.whl (8.8 kB)
+2026-07-29T08:43:44.256Z,Project DS2,Downloading typing_inspection-0.4.2-py3-none-any.whl (14 kB)
+2026-07-29T08:43:44.307Z,Project DS2,Downloading ujson-5.13.0-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (57 kB)
+2026-07-29T08:43:44.317Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.9/57.9 kB 38.3 MB/s eta 0:00:00
+2026-07-29T08:43:44.318Z,Project DS2,
+2026-07-29T08:43:44.355Z,Project DS2,Downloading urllib3-2.7.0-py3-none-any.whl (131 kB)
+2026-07-29T08:43:44.391Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 131.1/131.1 kB 4.3 MB/s eta 0:00:00
+2026-07-29T08:43:44.392Z,Project DS2,
+2026-07-29T08:43:44.455Z,Project DS2,Downloading uuid6-2025.0.1-py3-none-any.whl (7.0 kB)
+2026-07-29T08:43:44.486Z,Project DS2,Downloading watchdog-6.0.0-py3-none-manylinux2014_x86_64.whl (79 kB)
+2026-07-29T08:43:44.505Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 79.1/79.1 kB 5.6 MB/s eta 0:00:00
+2026-07-29T08:43:44.506Z,Project DS2,
+2026-07-29T08:43:44.550Z,Project DS2,Downloading cloudpickle-3.1.2-py3-none-any.whl (22 kB)
+2026-07-29T08:43:44.605Z,Project DS2,Downloading llvmlite-0.48.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (59.9 MB)
+2026-07-29T08:43:55.162Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 59.9/59.9 MB 6.6 MB/s eta 0:00:00
+2026-07-29T08:43:55.164Z,Project DS2,
+2026-07-29T08:43:55.220Z,Project DS2,Downloading numba-0.66.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (3.8 MB)
+2026-07-29T08:43:55.866Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.8/3.8 MB 5.9 MB/s eta 0:00:00
+2026-07-29T08:43:55.866Z,Project DS2,
+2026-07-29T08:43:55.909Z,Project DS2,Downloading nvidia_nccl_cu12-2.30.7-py3-none-manylinux_2_18_x86_64.whl (303.4 MB)
+2026-07-29T08:45:26.333Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 303.4/303.4 MB 4.3 MB/s eta 0:00:00
+2026-07-29T08:45:26.333Z,Project DS2,
+2026-07-29T08:45:26.405Z,Project DS2,Downloading cffi-2.1.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (217 kB)
+2026-07-29T08:45:26.472Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 217.9/217.9 kB 8.5 MB/s eta 0:00:00
+2026-07-29T08:45:26.504Z,Project DS2,Downloading charset_normalizer-3.4.9-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (221 kB)
+2026-07-29T08:45:26.555Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 221.3/221.3 kB 5.9 MB/s eta 0:00:00
+2026-07-29T08:45:26.556Z,Project DS2,
+2026-07-29T08:45:26.589Z,Project DS2,Downloading httptools-0.8.0-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (464 kB)
+2026-07-29T08:45:26.724Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 464.7/464.7 kB 3.9 MB/s eta 0:00:00
+2026-07-29T08:45:26.724Z,Project DS2,
+2026-07-29T08:45:26.772Z,Project DS2,Downloading litestar_htmx-0.5.0-py3-none-any.whl (10.0 kB)
+2026-07-29T08:45:26.816Z,Project DS2,Downloading markdown_it_py-4.2.0-py3-none-any.whl (91 kB)
+2026-07-29T08:45:26.847Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 91.7/91.7 kB 6.5 MB/s eta 0:00:00
+2026-07-29T08:45:26.847Z,Project DS2,
+2026-07-29T08:45:26.892Z,Project DS2,Downloading msgspec-0.21.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (219 kB)
+2026-07-29T08:45:26.937Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 219.9/219.9 kB 7.5 MB/s eta 0:00:00
+2026-07-29T08:45:26.938Z,Project DS2,
+2026-07-29T08:45:27.005Z,Project DS2,Downloading multidict-6.7.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (246 kB)
+2026-07-29T08:45:27.079Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 246.3/246.3 kB 4.3 MB/s eta 0:00:00
+2026-07-29T08:45:27.080Z,Project DS2,
+2026-07-29T08:45:27.127Z,Project DS2,Downloading multipart-2.0.0-py3-none-any.whl (16 kB)
+2026-07-29T08:45:27.183Z,Project DS2,Downloading mypy_extensions-1.1.0-py3-none-any.whl (5.0 kB)
+2026-07-29T08:45:27.227Z,Project DS2,Downloading patsy-1.0.2-py2.py3-none-any.whl (233 kB)
+2026-07-29T08:45:27.306Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 233.3/233.3 kB 3.3 MB/s eta 0:00:00
+2026-07-29T08:45:27.309Z,Project DS2,
+2026-07-29T08:45:27.348Z,Project DS2,Downloading polyfactory-3.3.0-py3-none-any.whl (62 kB)
+2026-07-29T08:45:27.394Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.7/62.7 kB 2.9 MB/s eta 0:00:00
+2026-07-29T08:45:27.434Z,Project DS2,Downloading protobuf-7.35.1-cp310-abi3-manylinux2014_x86_64.whl (327 kB)
+2026-07-29T08:45:27.506Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 327.1/327.1 kB 5.6 MB/s eta 0:00:00
+2026-07-29T08:45:27.507Z,Project DS2,
+2026-07-29T08:45:27.562Z,Project DS2,Downloading pyarrow-25.0.0-cp311-cp311-manylinux_2_28_x86_64.whl (50.1 MB)
+2026-07-29T08:45:38.383Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 50.1/50.1 MB 5.0 MB/s eta 0:00:00
+2026-07-29T08:45:38.384Z,Project DS2,
+2026-07-29T08:45:38.437Z,Project DS2,Downloading python_dotenv-1.2.2-py3-none-any.whl (22 kB)
+2026-07-29T08:45:38.495Z,Project DS2,Downloading regex-2026.7.19-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (801 kB)
+2026-07-29T08:45:38.648Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 801.4/801.4 kB 5.8 MB/s eta 0:00:00
+2026-07-29T08:45:38.649Z,Project DS2,
+2026-07-29T08:45:38.697Z,Project DS2,Downloading shellingham-1.5.4-py2.py3-none-any.whl (9.8 kB)
+2026-07-29T08:45:38.738Z,Project DS2,Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+2026-07-29T08:45:38.779Z,Project DS2,Downloading sniffio-1.3.1-py3-none-any.whl (10 kB)
+2026-07-29T08:45:38.822Z,Project DS2,Downloading tenacity-9.1.4-py3-none-any.whl (28 kB)
+2026-07-29T08:45:38.870Z,Project DS2,Downloading uvloop-0.22.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (3.8 MB)
+2026-07-29T08:45:39.448Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.8/3.8 MB 6.7 MB/s eta 0:00:00
+2026-07-29T08:45:39.449Z,Project DS2,
+2026-07-29T08:45:39.478Z,Project DS2,Downloading watchfiles-1.2.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (456 kB)
+2026-07-29T08:45:39.595Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 456.9/456.9 kB 4.6 MB/s eta 0:00:00
+2026-07-29T08:45:39.595Z,Project DS2,
+2026-07-29T08:45:39.633Z,Project DS2,Downloading websockets-16.1.1-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (186 kB)
+2026-07-29T08:45:39.690Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 186.9/186.9 kB 4.7 MB/s eta 0:00:00
+2026-07-29T08:45:39.691Z,Project DS2,
+2026-07-29T08:45:39.735Z,Project DS2,Downloading appdirs-1.4.4-py2.py3-none-any.whl (9.6 kB)
+2026-07-29T08:45:39.783Z,Project DS2,Downloading defusedxml-0.7.1-py2.py3-none-any.whl (25 kB)
+2026-07-29T08:45:39.829Z,Project DS2,Downloading distro-1.9.0-py3-none-any.whl (20 kB)
+2026-07-29T08:45:39.864Z,Project DS2,Downloading filelock-3.32.0-py3-none-any.whl (97 kB)
+2026-07-29T08:45:39.904Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 97.7/97.7 kB 3.2 MB/s eta 0:00:00
+2026-07-29T08:45:39.905Z,Project DS2,
+2026-07-29T08:45:39.939Z,Project DS2,Downloading rich_click-1.9.8-py3-none-any.whl (72 kB)
+2026-07-29T08:45:39.958Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 72.2/72.2 kB 14.4 MB/s eta 0:00:00
+2026-07-29T08:45:39.958Z,Project DS2,
+2026-07-29T08:45:39.993Z,Project DS2,Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+2026-07-29T08:45:40.059Z,Project DS2,Downloading pycparser-3.0-py3-none-any.whl (48 kB)
+2026-07-29T08:45:40.161Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.2/48.2 kB 2.1 MB/s eta 0:00:00
+2026-07-29T08:45:40.162Z,Project DS2,
+2026-07-29T08:46:04.961Z,Project DS2,"Installing collected packages: appdirs, websockets, watchdog, uvloop, uuid6, urllib3, ujson, typing-extensions, tqdm, threadpoolctl, tenacity, sniffio, slicer, six, shellingham, regex, pyyaml, python-dotenv, pyparsing, pygments, pycparser, pyarrow, protobuf, pluggy, pillow, nvidia-nccl-cu12, numpy, narwhals, mypy-extensions, multipart, multidict, msgspec, mdurl, llvmlite, litestar-htmx, kiwisolver, joblib, iniconfig, idna, httptools, h11, fsspec, fonttools, filelock, faker, dynaconf, distro, deprecation, defusedxml, cycler, cloudpickle, click, charset_normalizer, certifi, annotated-types, annotated-doc, uvicorn, typing-inspection, typing-inspect, scipy, requests, python-dateutil, pytest, pydantic-core, polyfactory, plotly, patsy, opentelemetry-proto, numba, nltk, markdown-it-py, httpcore, contourpy, cffi, anyio, xgboost, watchfiles, starlette, scikit-learn, rich, pydantic, pandas, matplotlib, iterative-telemetry, httpx, cryptography, typer, statsmodels, sklearn-compat, shap, seaborn, rich-click, fastapi, litestar, imbalanced-learn, evidently"
+2026-07-29T08:49:51.976Z,Project DS2,Successfully installed annotated-doc-0.0.5 annotated-types-0.8.0 anyio-4.14.2 appdirs-1.4.4 certifi-2026.7.22 cffi-2.1.0 charset_normalizer-3.4.9 click-8.4.2 cloudpickle-3.1.2 contourpy-1.3.3 cryptography-49.0.0 cycler-0.12.1 defusedxml-0.7.1 deprecation-2.1.0 distro-1.9.0 dynaconf-3.3.4 evidently-0.7.21 faker-40.36.0 fastapi-0.140.13 filelock-3.32.0 fonttools-4.63.0 fsspec-2026.7.0 h11-0.16.0 httpcore-1.0.9 httptools-0.8.0 httpx-0.28.1 idna-3.18 imbalanced-learn-0.14.2 iniconfig-2.3.0 iterative-telemetry-0.0.10 joblib-1.5.3 kiwisolver-1.5.0 litestar-2.24.0 litestar-htmx-0.5.0 llvmlite-0.48.0 markdown-it-py-4.2.0 matplotlib-3.11.1 mdurl-0.1.2 msgspec-0.21.1 multidict-6.7.1 multipart-2.0.0 mypy-extensions-1.1.0 narwhals-2.24.0 nltk-3.10.0 numba-0.66.0 numpy-2.4.6 nvidia-nccl-cu12-2.30.7 opentelemetry-proto-1.44.0 pandas-3.0.5 patsy-1.0.2 pillow-12.3.0 plotly-5.24.1 pluggy-1.6.0 polyfactory-3.3.0 protobuf-7.35.1 pyarrow-25.0.0 pycparser-3.0 pydantic-2.13.4 pydantic-core-2.46.4 pygments-2.20.0 pyparsing-3.3.2 pytest-9.1.1 python-dateutil-2.9.0.post0 python-dotenv-1.2.2 pyyaml-6.0.3 regex-2026.7.19 requests-2.34.2 rich-15.0.0 rich-click-1.9.8 scikit-learn-1.9.0 scipy-1.17.1 seaborn-0.13.2 shap-0.51.0 shellingham-1.5.4 six-1.17.0 sklearn-compat-0.1.6 slicer-0.0.8 sniffio-1.3.1 starlette-1.3.1 statsmodels-0.14.6 tenacity-9.1.4 threadpoolctl-3.6.0 tqdm-4.70.0 typer-0.27.0 typing-extensions-4.16.0 typing-inspect-0.9.0 typing-inspection-0.4.2 ujson-5.13.0 urllib3-2.7.0 uuid6-2025.0.1 uvicorn-0.51.0 uvloop-0.22.1 watchdog-6.0.0 watchfiles-1.2.0 websockets-16.1.1 xgboost-3.2.0
+2026-07-29T08:49:51.981Z,Project DS2,WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+2026-07-29T08:49:53.417Z,Project DS2,
+2026-07-29T08:49:53.417Z,Project DS2,[notice] A new release of pip is available: 24.0 -> 26.1.2
+2026-07-29T08:49:53.417Z,Project DS2,"[notice] To update, run: pip install --upgrade pip"
+2026-07-29T09:10:12.875Z,priceless_proskuriakova,"/app/api/main.py:27: UserWarning: [09:10:12] WARNING: /__w/xgboost/xgboost/src/collective/../data/../common/error_msg.h:83: If you are loading a serialized model (like pickle in Python, RDS in R) or"
+2026-07-29T09:10:12.876Z,priceless_proskuriakova,"configuration generated by an older version of XGBoost, please export the model by calling"
+2026-07-29T09:10:12.876Z,priceless_proskuriakova,"`Booster.save_model` from that version first, then load it back in current version. See:"
+2026-07-29T09:10:12.876Z,priceless_proskuriakova,
+2026-07-29T09:10:12.876Z,priceless_proskuriakova,    https://xgboost.readthedocs.io/en/stable/tutorials/saving_model.html
+2026-07-29T09:10:12.876Z,priceless_proskuriakova,
+2026-07-29T09:10:12.876Z,priceless_proskuriakova,for more details about differences between saving model and serializing.
+2026-07-29T09:10:12.876Z,priceless_proskuriakova,
+2026-07-29T09:10:12.876Z,priceless_proskuriakova,  artifact = pickle.load(f)
+2026-07-29T09:10:13.426Z,priceless_proskuriakova,INFO:     Started server process [1]
+2026-07-29T09:10:13.427Z,priceless_proskuriakova,INFO:     Waiting for application startup.
+2026-07-29T09:10:13.427Z,priceless_proskuriakova,INFO:     Application startup complete.
+2026-07-29T09:10:13.437Z,priceless_proskuriakova,INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2026-07-29T09:10:51.747Z,priceless_proskuriakova,"INFO:     172.17.0.1:55466 - ""GET /docs HTTP/1.1"" 200 OK"
+2026-07-29T09:10:53.452Z,priceless_proskuriakova,"INFO:     172.17.0.1:55466 - ""GET /openapi.json HTTP/1.1"" 200 OK"
+2026-07-29T09:12:06.426Z,priceless_proskuriakova,"INFO:     172.17.0.1:46438 - ""GET / HTTP/1.1"" 200 OK"
+2026-07-29T09:12:17.251Z,priceless_proskuriakova,"INFO:     172.17.0.1:38456 - ""POST /predict HTTP/1.1"" 200 OK"
+2026-07-29T09:12:21.199Z,priceless_proskuriakova,"INFO:     172.17.0.1:38456 - ""GET / HTTP/1.1"" 200 OK"
+2026-07-29T09:12:24.335Z,priceless_proskuriakova,"INFO:     172.17.0.1:38456 - ""POST /predict HTTP/1.1"" 200 OK"
+2026-08-15T13:32:02.686Z,Project DS2,Collecting pandas>=2.2 (from -r requirements.txt (line 1))
+2026-08-15T13:32:02.802Z,Project DS2,Downloading pandas-3.0.5-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (79 kB)
+2026-08-15T13:32:02.834Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 79.5/79.5 kB 2.8 MB/s eta 0:00:00
+2026-08-15T13:32:02.835Z,Project DS2,
+2026-08-15T13:32:03.417Z,Project DS2,Collecting numpy>=1.26 (from -r requirements.txt (line 2))
+2026-08-15T13:32:03.449Z,Project DS2,Downloading numpy-2.4.6-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+2026-08-15T13:32:03.789Z,Project DS2,Collecting faker>=24.0 (from -r requirements.txt (line 3))
+2026-08-15T13:32:03.839Z,Project DS2,Downloading faker-40.36.0-py3-none-any.whl.metadata (16 kB)
+2026-08-15T13:32:04.074Z,Project DS2,Collecting scikit-learn>=1.4 (from -r requirements.txt (line 4))
+2026-08-15T13:32:04.124Z,Project DS2,Downloading scikit_learn-1.9.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (11 kB)
+2026-08-15T13:32:04.241Z,Project DS2,Collecting xgboost>=2.0 (from -r requirements.txt (line 5))
+2026-08-15T13:32:04.288Z,Project DS2,Downloading xgboost-3.2.0-py3-none-manylinux_2_28_x86_64.whl.metadata (2.1 kB)
+2026-08-15T13:32:04.360Z,Project DS2,Collecting imbalanced-learn>=0.12 (from -r requirements.txt (line 6))
+2026-08-15T13:32:04.387Z,Project DS2,Downloading imbalanced_learn-0.14.2-py3-none-any.whl.metadata (8.9 kB)
+2026-08-15T13:32:04.537Z,Project DS2,Collecting shap>=0.45 (from -r requirements.txt (line 7))
+2026-08-15T13:32:04.563Z,Project DS2,Downloading shap-0.51.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (25 kB)
+2026-08-15T13:32:04.844Z,Project DS2,Collecting fastapi>=0.110 (from -r requirements.txt (line 8))
+2026-08-15T13:32:04.896Z,Project DS2,Downloading fastapi-0.141.1-py3-none-any.whl.metadata (27 kB)
+2026-08-15T13:32:05.146Z,Project DS2,Collecting uvicorn>=0.29 (from -r requirements.txt (line 9))
+2026-08-15T13:32:05.197Z,Project DS2,Downloading uvicorn-0.52.3-py3-none-any.whl.metadata (6.6 kB)
+2026-08-15T13:32:05.591Z,Project DS2,Collecting pydantic>=2.6 (from -r requirements.txt (line 10))
+2026-08-15T13:32:05.629Z,Project DS2,Downloading pydantic-2.13.4-py3-none-any.whl.metadata (109 kB)
+2026-08-15T13:32:05.654Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 109.4/109.4 kB 5.0 MB/s eta 0:00:00
+2026-08-15T13:32:05.655Z,Project DS2,
+2026-08-15T13:32:05.818Z,Project DS2,Collecting httpx>=0.27 (from -r requirements.txt (line 11))
+2026-08-15T13:32:05.854Z,Project DS2,Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+2026-08-15T13:32:06.044Z,Project DS2,Collecting pytest>=8.0 (from -r requirements.txt (line 12))
+2026-08-15T13:32:06.073Z,Project DS2,Downloading pytest-9.1.1-py3-none-any.whl.metadata (7.6 kB)
+2026-08-15T13:32:06.458Z,Project DS2,Collecting matplotlib>=3.8 (from -r requirements.txt (line 13))
+2026-08-15T13:32:06.492Z,Project DS2,Downloading matplotlib-3.11.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (80 kB)
+2026-08-15T13:32:06.512Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 80.3/80.3 kB 4.6 MB/s eta 0:00:00
+2026-08-15T13:32:06.512Z,Project DS2,
+2026-08-15T13:32:06.605Z,Project DS2,Collecting seaborn>=0.13 (from -r requirements.txt (line 14))
+2026-08-15T13:32:06.633Z,Project DS2,Downloading seaborn-0.13.2-py3-none-any.whl.metadata (5.4 kB)
+2026-08-15T13:32:06.989Z,Project DS2,Collecting evidently>=0.4 (from -r requirements.txt (line 15))
+2026-08-15T13:32:07.036Z,Project DS2,Downloading evidently-0.7.21-py3-none-any.whl.metadata (12 kB)
+2026-08-15T13:32:07.164Z,Project DS2,Collecting python-dateutil>=2.8.2 (from pandas>=2.2->-r requirements.txt (line 1))
+2026-08-15T13:32:07.196Z,Project DS2,Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+2026-08-15T13:32:07.655Z,Project DS2,Collecting scipy>=1.10.0 (from scikit-learn>=1.4->-r requirements.txt (line 4))
+2026-08-15T13:32:07.715Z,Project DS2,Downloading scipy-1.17.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+2026-08-15T13:32:07.728Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.1/62.1 kB 10.5 MB/s eta 0:00:00
+2026-08-15T13:32:07.728Z,Project DS2,
+2026-08-15T13:32:07.843Z,Project DS2,Collecting joblib>=1.4.0 (from scikit-learn>=1.4->-r requirements.txt (line 4))
+2026-08-15T13:32:07.890Z,Project DS2,Downloading joblib-1.5.3-py3-none-any.whl.metadata (5.5 kB)
+2026-08-15T13:32:08.040Z,Project DS2,Collecting narwhals>=2.0.1 (from scikit-learn>=1.4->-r requirements.txt (line 4))
+2026-08-15T13:32:08.091Z,Project DS2,Downloading narwhals-2.24.0-py3-none-any.whl.metadata (15 kB)
+2026-08-15T13:32:08.136Z,Project DS2,Collecting threadpoolctl>=3.5.0 (from scikit-learn>=1.4->-r requirements.txt (line 4))
+2026-08-15T13:32:08.161Z,Project DS2,Downloading threadpoolctl-3.6.0-py3-none-any.whl.metadata (13 kB)
+2026-08-15T13:32:08.243Z,Project DS2,Collecting nvidia-nccl-cu12 (from xgboost>=2.0->-r requirements.txt (line 5))
+2026-08-15T13:32:08.290Z,Project DS2,Downloading nvidia_nccl_cu12-2.31.2-py3-none-manylinux_2_18_x86_64.whl.metadata (2.1 kB)
+2026-08-15T13:32:08.407Z,Project DS2,"Collecting sklearn-compat<0.2,>=0.1.6 (from imbalanced-learn>=0.12->-r requirements.txt (line 6))"
+2026-08-15T13:32:08.455Z,Project DS2,Downloading sklearn_compat-0.1.6-py3-none-any.whl.metadata (22 kB)
+2026-08-15T13:32:08.691Z,Project DS2,Collecting tqdm>=4.27.0 (from shap>=0.45->-r requirements.txt (line 7))
+2026-08-15T13:32:08.718Z,Project DS2,Downloading tqdm-4.70.0-py3-none-any.whl.metadata (57 kB)
+2026-08-15T13:32:08.745Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.3/57.3 kB 14.2 MB/s eta 0:00:00
+2026-08-15T13:32:08.745Z,Project DS2,
+2026-08-15T13:32:08.756Z,Project DS2,Requirement already satisfied: packaging>20.9 in /usr/local/lib/python3.11/site-packages (from shap>=0.45->-r requirements.txt (line 7)) (26.3)
+2026-08-15T13:32:08.791Z,Project DS2,Collecting slicer==0.0.8 (from shap>=0.45->-r requirements.txt (line 7))
+2026-08-15T13:32:08.816Z,Project DS2,Downloading slicer-0.0.8-py3-none-any.whl.metadata (4.0 kB)
+2026-08-15T13:32:09.099Z,Project DS2,Collecting numba (from shap>=0.45->-r requirements.txt (line 7))
+2026-08-15T13:32:09.145Z,Project DS2,Downloading numba-0.67.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.7 kB)
+2026-08-15T13:32:09.316Z,Project DS2,Collecting llvmlite (from shap>=0.45->-r requirements.txt (line 7))
+2026-08-15T13:32:09.343Z,Project DS2,Downloading llvmlite-0.49.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (5.0 kB)
+2026-08-15T13:32:09.413Z,Project DS2,Collecting cloudpickle (from shap>=0.45->-r requirements.txt (line 7))
+2026-08-15T13:32:09.438Z,Project DS2,Downloading cloudpickle-3.1.2-py3-none-any.whl.metadata (7.1 kB)
+2026-08-15T13:32:09.513Z,Project DS2,Collecting typing-extensions (from shap>=0.45->-r requirements.txt (line 7))
+2026-08-15T13:32:09.538Z,Project DS2,Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+2026-08-15T13:32:09.778Z,Project DS2,Collecting starlette>=0.46.0 (from fastapi>=0.110->-r requirements.txt (line 8))
+2026-08-15T13:32:09.803Z,Project DS2,Downloading starlette-1.6.0-py3-none-any.whl.metadata (6.4 kB)
+2026-08-15T13:32:09.889Z,Project DS2,Collecting typing-inspection>=0.4.2 (from fastapi>=0.110->-r requirements.txt (line 8))
+2026-08-15T13:32:09.918Z,Project DS2,Downloading typing_inspection-0.4.4-py3-none-any.whl.metadata (2.6 kB)
+2026-08-15T13:32:09.975Z,Project DS2,Collecting annotated-doc>=0.0.2 (from fastapi>=0.110->-r requirements.txt (line 8))
+2026-08-15T13:32:10.021Z,Project DS2,Downloading annotated_doc-0.0.5-py3-none-any.whl.metadata (6.5 kB)
+2026-08-15T13:32:10.122Z,Project DS2,Collecting click>=7.0 (from uvicorn>=0.29->-r requirements.txt (line 9))
+2026-08-15T13:32:10.149Z,Project DS2,Downloading click-8.4.2-py3-none-any.whl.metadata (2.6 kB)
+2026-08-15T13:32:10.207Z,Project DS2,Collecting h11>=0.8 (from uvicorn>=0.29->-r requirements.txt (line 9))
+2026-08-15T13:32:10.254Z,Project DS2,Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+2026-08-15T13:32:10.312Z,Project DS2,Collecting annotated-types>=0.6.0 (from pydantic>=2.6->-r requirements.txt (line 10))
+2026-08-15T13:32:10.358Z,Project DS2,Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+2026-08-15T13:32:12.278Z,Project DS2,Collecting pydantic-core==2.46.4 (from pydantic>=2.6->-r requirements.txt (line 10))
+2026-08-15T13:32:12.305Z,Project DS2,Downloading pydantic_core-2.46.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.6 kB)
+2026-08-15T13:32:12.419Z,Project DS2,Collecting anyio (from httpx>=0.27->-r requirements.txt (line 11))
+2026-08-15T13:32:12.445Z,Project DS2,Downloading anyio-4.14.2-py3-none-any.whl.metadata (4.6 kB)
+2026-08-15T13:32:12.526Z,Project DS2,Collecting certifi (from httpx>=0.27->-r requirements.txt (line 11))
+2026-08-15T13:32:12.551Z,Project DS2,Downloading certifi-2026.7.22-py3-none-any.whl.metadata (2.5 kB)
+2026-08-15T13:32:12.631Z,Project DS2,Collecting httpcore==1.* (from httpx>=0.27->-r requirements.txt (line 11))
+2026-08-15T13:32:12.679Z,Project DS2,Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+2026-08-15T13:32:12.754Z,Project DS2,Collecting idna (from httpx>=0.27->-r requirements.txt (line 11))
+2026-08-15T13:32:12.803Z,Project DS2,Downloading idna-3.18-py3-none-any.whl.metadata (6.1 kB)
+2026-08-15T13:32:12.877Z,Project DS2,Collecting iniconfig>=1.0.1 (from pytest>=8.0->-r requirements.txt (line 12))
+2026-08-15T13:32:12.902Z,Project DS2,Downloading iniconfig-2.3.0-py3-none-any.whl.metadata (2.5 kB)
+2026-08-15T13:32:12.971Z,Project DS2,"Collecting pluggy<2,>=1.5 (from pytest>=8.0->-r requirements.txt (line 12))"
+2026-08-15T13:32:12.996Z,Project DS2,Downloading pluggy-1.6.0-py3-none-any.whl.metadata (4.8 kB)
+2026-08-15T13:32:13.079Z,Project DS2,Collecting pygments>=2.7.2 (from pytest>=8.0->-r requirements.txt (line 12))
+2026-08-15T13:32:13.109Z,Project DS2,Downloading pygments-2.20.0-py3-none-any.whl.metadata (2.5 kB)
+2026-08-15T13:32:13.285Z,Project DS2,Collecting contourpy>=1.0.1 (from matplotlib>=3.8->-r requirements.txt (line 13))
+2026-08-15T13:32:13.331Z,Project DS2,Downloading contourpy-1.3.3-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (5.5 kB)
+2026-08-15T13:32:13.393Z,Project DS2,Collecting cycler>=0.10 (from matplotlib>=3.8->-r requirements.txt (line 13))
+2026-08-15T13:32:13.420Z,Project DS2,Downloading cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+2026-08-15T13:32:13.941Z,Project DS2,Collecting fonttools>=4.28.2 (from matplotlib>=3.8->-r requirements.txt (line 13))
+2026-08-15T13:32:13.968Z,Project DS2,Downloading fonttools-4.63.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (118 kB)
+2026-08-15T13:32:14.000Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 118.7/118.7 kB 4.9 MB/s eta 0:00:00
+2026-08-15T13:32:14.000Z,Project DS2,
+2026-08-15T13:32:14.179Z,Project DS2,Collecting kiwisolver>=1.3.1 (from matplotlib>=3.8->-r requirements.txt (line 13))
+2026-08-15T13:32:14.207Z,Project DS2,Downloading kiwisolver-1.5.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (5.1 kB)
+2026-08-15T13:32:14.696Z,Project DS2,Collecting pillow>=9 (from matplotlib>=3.8->-r requirements.txt (line 13))
+2026-08-15T13:32:14.748Z,Project DS2,Downloading pillow-12.3.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.1 kB)
+2026-08-15T13:32:14.859Z,Project DS2,Collecting pyparsing>=3 (from matplotlib>=3.8->-r requirements.txt (line 13))
+2026-08-15T13:32:14.886Z,Project DS2,Downloading pyparsing-3.3.2-py3-none-any.whl.metadata (5.8 kB)
+2026-08-15T13:32:15.756Z,Project DS2,Collecting cryptography>=43.0.1 (from evidently>=0.4->-r requirements.txt (line 15))
+2026-08-15T13:32:15.785Z,Project DS2,Downloading cryptography-50.0.0-cp311-abi3-manylinux_2_34_x86_64.whl.metadata (4.3 kB)
+2026-08-15T13:32:15.846Z,Project DS2,Collecting deprecation>=2.1.0 (from evidently>=0.4->-r requirements.txt (line 15))
+2026-08-15T13:32:15.872Z,Project DS2,Downloading deprecation-2.1.0-py2.py3-none-any.whl.metadata (4.6 kB)
+2026-08-15T13:32:16.186Z,Project DS2,Collecting dynaconf>=3.2.4 (from evidently>=0.4->-r requirements.txt (line 15))
+2026-08-15T13:32:16.213Z,Project DS2,Downloading dynaconf-3.3.5-py3-none-any.whl.metadata (8.5 kB)
+2026-08-15T13:32:16.305Z,Project DS2,Collecting fsspec>=2024.9.0 (from evidently>=0.4->-r requirements.txt (line 15))
+2026-08-15T13:32:16.351Z,Project DS2,Downloading fsspec-2026.7.0-py3-none-any.whl.metadata (10 kB)
+2026-08-15T13:32:16.415Z,Project DS2,Collecting iterative-telemetry>=0.0.5 (from evidently>=0.4->-r requirements.txt (line 15))
+2026-08-15T13:32:16.444Z,Project DS2,Downloading iterative_telemetry-0.0.10-py3-none-any.whl.metadata (4.1 kB)
+2026-08-15T13:32:16.757Z,Project DS2,Collecting litestar>=2.19.0 (from evidently>=0.4->-r requirements.txt (line 15))
+2026-08-15T13:32:16.809Z,Project DS2,Downloading litestar-2.24.0-py3-none-any.whl.metadata (26 kB)
+2026-08-15T13:32:16.895Z,Project DS2,Collecting nltk>=3.6.7 (from evidently>=0.4->-r requirements.txt (line 15))
+2026-08-15T13:32:16.925Z,Project DS2,Downloading nltk-3.10.3-py3-none-any.whl.metadata (3.2 kB)
+2026-08-15T13:32:17.057Z,Project DS2,Collecting opentelemetry-proto>=1.25.0 (from evidently>=0.4->-r requirements.txt (line 15))
+2026-08-15T13:32:17.083Z,Project DS2,Downloading opentelemetry_proto-1.44.0-py3-none-any.whl.metadata (2.3 kB)
+2026-08-15T13:32:17.451Z,Project DS2,"Collecting plotly<6,>=5.10.0 (from evidently>=0.4->-r requirements.txt (line 15))"
+2026-08-15T13:32:17.501Z,Project DS2,Downloading plotly-5.24.1-py3-none-any.whl.metadata (7.3 kB)
+2026-08-15T13:32:17.661Z,Project DS2,Collecting pyyaml>=6.0.1 (from evidently>=0.4->-r requirements.txt (line 15))
+2026-08-15T13:32:17.688Z,Project DS2,Downloading pyyaml-6.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+2026-08-15T13:32:17.806Z,Project DS2,Collecting requests>=2.32.0 (from evidently>=0.4->-r requirements.txt (line 15))
+2026-08-15T13:32:17.833Z,Project DS2,Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+2026-08-15T13:32:18.010Z,Project DS2,Collecting rich>=13 (from evidently>=0.4->-r requirements.txt (line 15))
+2026-08-15T13:32:18.061Z,Project DS2,Downloading rich-15.0.0-py3-none-any.whl.metadata (18 kB)
+2026-08-15T13:32:18.207Z,Project DS2,Collecting statsmodels>=0.14.0 (from evidently>=0.4->-r requirements.txt (line 15))
+2026-08-15T13:32:18.255Z,Project DS2,Downloading statsmodels-0.14.6-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (9.5 kB)
+2026-08-15T13:32:18.356Z,Project DS2,Collecting typer>=0.3 (from evidently>=0.4->-r requirements.txt (line 15))
+2026-08-15T13:32:18.407Z,Project DS2,Downloading typer-0.27.1-py3-none-any.whl.metadata (16 kB)
+2026-08-15T13:32:18.470Z,Project DS2,Collecting typing-inspect>=0.9.0 (from evidently>=0.4->-r requirements.txt (line 15))
+2026-08-15T13:32:18.518Z,Project DS2,Downloading typing_inspect-0.9.0-py3-none-any.whl.metadata (1.5 kB)
+2026-08-15T13:32:18.697Z,Project DS2,Collecting ujson>=5.4.0 (from evidently>=0.4->-r requirements.txt (line 15))
+2026-08-15T13:32:18.724Z,Project DS2,Downloading ujson-5.13.0-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (10.0 kB)
+2026-08-15T13:32:18.848Z,Project DS2,Collecting urllib3>=1.26.19 (from evidently>=0.4->-r requirements.txt (line 15))
+2026-08-15T13:32:18.875Z,Project DS2,Downloading urllib3-2.7.0-py3-none-any.whl.metadata (6.9 kB)
+2026-08-15T13:32:18.939Z,Project DS2,Collecting uuid6>=2024.7.10 (from evidently>=0.4->-r requirements.txt (line 15))
+2026-08-15T13:32:18.967Z,Project DS2,Downloading uuid6-2025.0.1-py3-none-any.whl.metadata (10 kB)
+2026-08-15T13:32:19.127Z,Project DS2,Collecting watchdog>=3.0.0 (from evidently>=0.4->-r requirements.txt (line 15))
+2026-08-15T13:32:19.174Z,Project DS2,Downloading watchdog-6.0.0-py3-none-manylinux2014_x86_64.whl.metadata (44 kB)
+2026-08-15T13:32:19.181Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 44.3/44.3 kB 24.7 MB/s eta 0:00:00
+2026-08-15T13:32:19.182Z,Project DS2,
+2026-08-15T13:32:19.511Z,Project DS2,Collecting cffi>=2.0.0 (from cryptography>=43.0.1->evidently>=0.4->-r requirements.txt (line 15))
+2026-08-15T13:32:19.538Z,Project DS2,Downloading cffi-2.1.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.5 kB)
+2026-08-15T13:32:19.824Z,Project DS2,Collecting appdirs (from iterative-telemetry>=0.0.5->evidently>=0.4->-r requirements.txt (line 15))
+2026-08-15T13:32:19.874Z,Project DS2,Downloading appdirs-1.4.4-py2.py3-none-any.whl.metadata (9.0 kB)
+2026-08-15T13:32:19.976Z,Project DS2,Collecting filelock (from iterative-telemetry>=0.0.5->evidently>=0.4->-r requirements.txt (line 15))
+2026-08-15T13:32:20.004Z,Project DS2,Downloading filelock-3.32.3-py3-none-any.whl.metadata (2.0 kB)
+2026-08-15T13:32:20.062Z,Project DS2,Collecting distro (from iterative-telemetry>=0.0.5->evidently>=0.4->-r requirements.txt (line 15))
+2026-08-15T13:32:20.108Z,Project DS2,Downloading distro-1.9.0-py3-none-any.whl.metadata (6.8 kB)
+2026-08-15T13:32:20.478Z,Project DS2,Collecting litestar-htmx>=0.4.0 (from litestar>=2.19.0->evidently>=0.4->-r requirements.txt (line 15))
+2026-08-15T13:32:20.528Z,Project DS2,Downloading litestar_htmx-0.5.0-py3-none-any.whl.metadata (1.9 kB)
+2026-08-15T13:32:20.673Z,Project DS2,Collecting msgspec>=0.18.2 (from litestar>=2.19.0->evidently>=0.4->-r requirements.txt (line 15))
+2026-08-15T13:32:20.699Z,Project DS2,Downloading msgspec-0.21.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (5.8 kB)
+2026-08-15T13:32:21.222Z,Project DS2,Collecting multidict>=6.0.2 (from litestar>=2.19.0->evidently>=0.4->-r requirements.txt (line 15))
+2026-08-15T13:32:21.248Z,Project DS2,Downloading multidict-6.7.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (5.3 kB)
+2026-08-15T13:32:21.542Z,Project DS2,Collecting multipart>=1.2.0 (from litestar>=2.19.0->evidently>=0.4->-r requirements.txt (line 15))
+2026-08-15T13:32:21.570Z,Project DS2,Downloading multipart-2.0.0-py3-none-any.whl.metadata (4.5 kB)
+2026-08-15T13:32:21.646Z,Project DS2,Collecting polyfactory>=2.6.3 (from litestar>=2.19.0->evidently>=0.4->-r requirements.txt (line 15))
+2026-08-15T13:32:21.693Z,Project DS2,Downloading polyfactory-3.3.0-py3-none-any.whl.metadata (27 kB)
+2026-08-15T13:32:21.773Z,Project DS2,Collecting rich-click (from litestar>=2.19.0->evidently>=0.4->-r requirements.txt (line 15))
+2026-08-15T13:32:21.798Z,Project DS2,Downloading rich_click-1.9.8-py3-none-any.whl.metadata (8.7 kB)
+2026-08-15T13:32:21.876Z,Project DS2,Collecting sniffio>=1.3.1 (from litestar>=2.19.0->evidently>=0.4->-r requirements.txt (line 15))
+2026-08-15T13:32:21.903Z,Project DS2,Downloading sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)
+2026-08-15T13:32:22.252Z,Project DS2,Collecting defusedxml (from nltk>=3.6.7->evidently>=0.4->-r requirements.txt (line 15))
+2026-08-15T13:32:22.301Z,Project DS2,Downloading defusedxml-0.7.1-py2.py3-none-any.whl.metadata (32 kB)
+2026-08-15T13:32:23.175Z,Project DS2,Collecting regex>=2021.8.3 (from nltk>=3.6.7->evidently>=0.4->-r requirements.txt (line 15))
+2026-08-15T13:32:23.225Z,Project DS2,Downloading regex-2026.7.19-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (40 kB)
+2026-08-15T13:32:23.233Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 40.5/40.5 kB 19.6 MB/s eta 0:00:00
+2026-08-15T13:32:23.233Z,Project DS2,
+2026-08-15T13:32:23.649Z,Project DS2,"Collecting protobuf<8.0,>=5.0 (from opentelemetry-proto>=1.25.0->evidently>=0.4->-r requirements.txt (line 15))"
+2026-08-15T13:32:23.675Z,Project DS2,Downloading protobuf-7.35.1-cp310-abi3-manylinux2014_x86_64.whl.metadata (595 bytes)
+2026-08-15T13:32:24.006Z,Project DS2,Collecting pyarrow>=13.0.0 (from pandas[parquet]>=1.3.5->evidently>=0.4->-r requirements.txt (line 15))
+2026-08-15T13:32:24.034Z,Project DS2,Downloading pyarrow-25.0.1-cp311-cp311-manylinux_2_28_x86_64.whl.metadata (3.0 kB)
+2026-08-15T13:32:24.156Z,Project DS2,"Collecting tenacity>=6.2.0 (from plotly<6,>=5.10.0->evidently>=0.4->-r requirements.txt (line 15))"
+2026-08-15T13:32:24.182Z,Project DS2,Downloading tenacity-9.1.4-py3-none-any.whl.metadata (1.2 kB)
+2026-08-15T13:32:24.302Z,Project DS2,Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas>=2.2->-r requirements.txt (line 1))
+2026-08-15T13:32:24.330Z,Project DS2,Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+2026-08-15T13:32:24.671Z,Project DS2,"Collecting charset_normalizer<4,>=2 (from requests>=2.32.0->evidently>=0.4->-r requirements.txt (line 15))"
+2026-08-15T13:32:24.698Z,Project DS2,Downloading charset_normalizer-3.5.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (45 kB)
+2026-08-15T13:32:24.723Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.9/45.9 kB 16.6 MB/s eta 0:00:00
+2026-08-15T13:32:24.723Z,Project DS2,
+2026-08-15T13:32:24.846Z,Project DS2,Collecting markdown-it-py>=2.2.0 (from rich>=13->evidently>=0.4->-r requirements.txt (line 15))
+2026-08-15T13:32:24.871Z,Project DS2,Downloading markdown_it_py-4.2.0-py3-none-any.whl.metadata (7.4 kB)
+2026-08-15T13:32:25.187Z,Project DS2,Collecting patsy>=0.5.6 (from statsmodels>=0.14.0->evidently>=0.4->-r requirements.txt (line 15))
+2026-08-15T13:32:25.217Z,Project DS2,Downloading patsy-1.0.2-py2.py3-none-any.whl.metadata (3.6 kB)
+2026-08-15T13:32:25.356Z,Project DS2,Collecting shellingham>=1.3.0 (from typer>=0.3->evidently>=0.4->-r requirements.txt (line 15))
+2026-08-15T13:32:25.384Z,Project DS2,Downloading shellingham-1.5.4-py2.py3-none-any.whl.metadata (3.5 kB)
+2026-08-15T13:32:25.501Z,Project DS2,Collecting mypy-extensions>=0.3.0 (from typing-inspect>=0.9.0->evidently>=0.4->-r requirements.txt (line 15))
+2026-08-15T13:32:25.548Z,Project DS2,Downloading mypy_extensions-1.1.0-py3-none-any.whl.metadata (1.1 kB)
+2026-08-15T13:32:25.772Z,Project DS2,Collecting httptools>=0.8.0 (from uvicorn[standard]>=0.22.0->evidently>=0.4->-r requirements.txt (line 15))
+2026-08-15T13:32:25.800Z,Project DS2,Downloading httptools-0.8.0-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (3.5 kB)
+2026-08-15T13:32:25.870Z,Project DS2,Collecting python-dotenv>=0.13 (from uvicorn[standard]>=0.22.0->evidently>=0.4->-r requirements.txt (line 15))
+2026-08-15T13:32:25.918Z,Project DS2,Downloading python_dotenv-1.2.2-py3-none-any.whl.metadata (27 kB)
+2026-08-15T13:32:26.273Z,Project DS2,Collecting uvloop>=0.15.1 (from uvicorn[standard]>=0.22.0->evidently>=0.4->-r requirements.txt (line 15))
+2026-08-15T13:32:26.301Z,Project DS2,Downloading uvloop-0.22.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (4.9 kB)
+2026-08-15T13:32:26.486Z,Project DS2,Collecting watchfiles>=0.20 (from uvicorn[standard]>=0.22.0->evidently>=0.4->-r requirements.txt (line 15))
+2026-08-15T13:32:26.512Z,Project DS2,Downloading watchfiles-1.2.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.9 kB)
+2026-08-15T13:32:26.769Z,Project DS2,Collecting websockets>=13.0 (from uvicorn[standard]>=0.22.0->evidently>=0.4->-r requirements.txt (line 15))
+2026-08-15T13:32:26.816Z,Project DS2,Downloading websockets-17.0.1-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (6.3 kB)
+2026-08-15T13:32:27.025Z,Project DS2,Collecting pycparser (from cffi>=2.0.0->cryptography>=43.0.1->evidently>=0.4->-r requirements.txt (line 15))
+2026-08-15T13:32:27.052Z,Project DS2,Downloading pycparser-3.0-py3-none-any.whl.metadata (8.2 kB)
+2026-08-15T13:32:27.209Z,Project DS2,Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=13->evidently>=0.4->-r requirements.txt (line 15))
+2026-08-15T13:32:27.236Z,Project DS2,Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+2026-08-15T13:32:28.060Z,Project DS2,Downloading pandas-3.0.5-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (11.3 MB)
+2026-08-15T13:32:29.704Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.3/11.3 MB 6.8 MB/s eta 0:00:00
+2026-08-15T13:32:29.704Z,Project DS2,
+2026-08-15T13:32:29.733Z,Project DS2,Downloading numpy-2.4.6-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.9 MB)
+2026-08-15T13:32:33.027Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.9/16.9 MB 4.8 MB/s eta 0:00:00
+2026-08-15T13:32:33.029Z,Project DS2,
+2026-08-15T13:32:33.071Z,Project DS2,Downloading faker-40.36.0-py3-none-any.whl (2.1 MB)
+2026-08-15T13:32:33.354Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 7.5 MB/s eta 0:00:00
+2026-08-15T13:32:33.355Z,Project DS2,
+2026-08-15T13:32:33.393Z,Project DS2,Downloading scikit_learn-1.9.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (9.3 MB)
+2026-08-15T13:32:34.756Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.3/9.3 MB 6.9 MB/s eta 0:00:00
+2026-08-15T13:32:34.757Z,Project DS2,
+2026-08-15T13:32:34.793Z,Project DS2,Downloading xgboost-3.2.0-py3-none-manylinux_2_28_x86_64.whl (131.7 MB)
+2026-08-15T13:32:56.479Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 131.7/131.7 MB 6.5 MB/s eta 0:00:00
+2026-08-15T13:32:56.481Z,Project DS2,
+2026-08-15T13:32:56.519Z,Project DS2,Downloading imbalanced_learn-0.14.2-py3-none-any.whl (236 kB)
+2026-08-15T13:32:56.554Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 236.1/236.1 kB 8.2 MB/s eta 0:00:00
+2026-08-15T13:32:56.555Z,Project DS2,
+2026-08-15T13:32:56.590Z,Project DS2,Downloading shap-0.51.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (1.1 MB)
+2026-08-15T13:32:56.744Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 7.1 MB/s eta 0:00:00
+2026-08-15T13:32:56.745Z,Project DS2,
+2026-08-15T13:32:56.785Z,Project DS2,Downloading slicer-0.0.8-py3-none-any.whl (15 kB)
+2026-08-15T13:32:56.824Z,Project DS2,Downloading fastapi-0.141.1-py3-none-any.whl (131 kB)
+2026-08-15T13:32:56.855Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.0/132.0 kB 5.0 MB/s eta 0:00:00
+2026-08-15T13:32:56.856Z,Project DS2,
+2026-08-15T13:32:56.890Z,Project DS2,Downloading uvicorn-0.52.3-py3-none-any.whl (79 kB)
+2026-08-15T13:32:56.911Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 79.9/79.9 kB 5.1 MB/s eta 0:00:00
+2026-08-15T13:32:56.912Z,Project DS2,
+2026-08-15T13:32:56.946Z,Project DS2,Downloading pydantic-2.13.4-py3-none-any.whl (472 kB)
+2026-08-15T13:32:57.000Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 472.3/472.3 kB 9.7 MB/s eta 0:00:00
+2026-08-15T13:32:57.001Z,Project DS2,
+2026-08-15T13:32:57.031Z,Project DS2,Downloading pydantic_core-2.46.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.1 MB)
+2026-08-15T13:32:57.316Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 7.6 MB/s eta 0:00:00
+2026-08-15T13:32:57.316Z,Project DS2,
+2026-08-15T13:32:57.343Z,Project DS2,Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+2026-08-15T13:32:57.374Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 73.5/73.5 kB 3.9 MB/s eta 0:00:00
+2026-08-15T13:32:57.375Z,Project DS2,
+2026-08-15T13:32:57.412Z,Project DS2,Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+2026-08-15T13:32:57.438Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.8/78.8 kB 4.2 MB/s eta 0:00:00
+2026-08-15T13:32:57.439Z,Project DS2,
+2026-08-15T13:32:57.482Z,Project DS2,Downloading pytest-9.1.1-py3-none-any.whl (386 kB)
+2026-08-15T13:32:57.534Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 386.5/386.5 kB 8.6 MB/s eta 0:00:00
+2026-08-15T13:32:57.534Z,Project DS2,
+2026-08-15T13:32:57.564Z,Project DS2,Downloading matplotlib-3.11.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (10.0 MB)
+2026-08-15T13:32:59.216Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.0/10.0 MB 6.1 MB/s eta 0:00:00
+2026-08-15T13:32:59.217Z,Project DS2,
+2026-08-15T13:32:59.255Z,Project DS2,Downloading seaborn-0.13.2-py3-none-any.whl (294 kB)
+2026-08-15T13:32:59.350Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 294.9/294.9 kB 3.6 MB/s eta 0:00:00
+2026-08-15T13:32:59.351Z,Project DS2,
+2026-08-15T13:32:59.395Z,Project DS2,Downloading evidently-0.7.21-py3-none-any.whl (11.7 MB)
+2026-08-15T13:33:01.899Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.7/11.7 MB 4.9 MB/s eta 0:00:00
+2026-08-15T13:33:01.901Z,Project DS2,
+2026-08-15T13:33:01.948Z,Project DS2,Downloading annotated_doc-0.0.5-py3-none-any.whl (5.3 kB)
+2026-08-15T13:33:01.997Z,Project DS2,Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+2026-08-15T13:33:02.036Z,Project DS2,Downloading certifi-2026.7.22-py3-none-any.whl (136 kB)
+2026-08-15T13:33:02.115Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 137.0/137.0 kB 2.0 MB/s eta 0:00:00
+2026-08-15T13:33:02.121Z,Project DS2,
+2026-08-15T13:33:02.164Z,Project DS2,Downloading click-8.4.2-py3-none-any.whl (119 kB)
+2026-08-15T13:33:02.207Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 119.2/119.2 kB 3.3 MB/s eta 0:00:00
+2026-08-15T13:33:02.214Z,Project DS2,
+2026-08-15T13:33:02.254Z,Project DS2,Downloading contourpy-1.3.3-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (355 kB)
+2026-08-15T13:33:02.338Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 355.2/355.2 kB 4.5 MB/s eta 0:00:00
+2026-08-15T13:33:02.339Z,Project DS2,
+2026-08-15T13:33:02.378Z,Project DS2,Downloading cryptography-50.0.0-cp311-abi3-manylinux_2_34_x86_64.whl (4.7 MB)
+2026-08-15T13:33:03.519Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.7/4.7 MB 4.2 MB/s eta 0:00:00
+2026-08-15T13:33:03.519Z,Project DS2,
+2026-08-15T13:33:03.563Z,Project DS2,Downloading cycler-0.12.1-py3-none-any.whl (8.3 kB)
+2026-08-15T13:33:03.609Z,Project DS2,Downloading deprecation-2.1.0-py2.py3-none-any.whl (11 kB)
+2026-08-15T13:33:03.651Z,Project DS2,Downloading dynaconf-3.3.5-py3-none-any.whl (271 kB)
+2026-08-15T13:33:03.723Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 271.4/271.4 kB 4.5 MB/s eta 0:00:00
+2026-08-15T13:33:03.725Z,Project DS2,
+2026-08-15T13:33:03.761Z,Project DS2,Downloading fonttools-4.63.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (5.1 MB)
+2026-08-15T13:33:05.116Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.1/5.1 MB 3.8 MB/s eta 0:00:00
+2026-08-15T13:33:05.116Z,Project DS2,
+2026-08-15T13:33:05.147Z,Project DS2,Downloading fsspec-2026.7.0-py3-none-any.whl (206 kB)
+2026-08-15T13:33:05.218Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 206.6/206.6 kB 3.9 MB/s eta 0:00:00
+2026-08-15T13:33:05.219Z,Project DS2,
+2026-08-15T13:33:05.262Z,Project DS2,Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+2026-08-15T13:33:05.300Z,Project DS2,Downloading iniconfig-2.3.0-py3-none-any.whl (7.5 kB)
+2026-08-15T13:33:05.337Z,Project DS2,Downloading iterative_telemetry-0.0.10-py3-none-any.whl (10 kB)
+2026-08-15T13:33:05.374Z,Project DS2,Downloading joblib-1.5.3-py3-none-any.whl (309 kB)
+2026-08-15T13:33:05.452Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 309.1/309.1 kB 4.8 MB/s eta 0:00:00
+2026-08-15T13:33:05.453Z,Project DS2,
+2026-08-15T13:33:05.495Z,Project DS2,Downloading kiwisolver-1.5.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (1.4 MB)
+2026-08-15T13:33:05.763Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 5.5 MB/s eta 0:00:00
+2026-08-15T13:33:05.764Z,Project DS2,
+2026-08-15T13:33:05.798Z,Project DS2,Downloading litestar-2.24.0-py3-none-any.whl (581 kB)
+2026-08-15T13:33:05.904Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 581.8/581.8 kB 6.0 MB/s eta 0:00:00
+2026-08-15T13:33:05.905Z,Project DS2,
+2026-08-15T13:33:05.935Z,Project DS2,Downloading anyio-4.14.2-py3-none-any.whl (125 kB)
+2026-08-15T13:33:05.961Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 125.8/125.8 kB 9.7 MB/s eta 0:00:00
+2026-08-15T13:33:05.962Z,Project DS2,
+2026-08-15T13:33:06.001Z,Project DS2,Downloading idna-3.18-py3-none-any.whl (65 kB)
+2026-08-15T13:33:06.016Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 65.5/65.5 kB 7.1 MB/s eta 0:00:00
+2026-08-15T13:33:06.017Z,Project DS2,
+2026-08-15T13:33:06.054Z,Project DS2,Downloading narwhals-2.24.0-py3-none-any.whl (461 kB)
+2026-08-15T13:33:06.130Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 461.0/461.0 kB 6.3 MB/s eta 0:00:00
+2026-08-15T13:33:06.130Z,Project DS2,
+2026-08-15T13:33:06.170Z,Project DS2,Downloading nltk-3.10.3-py3-none-any.whl (1.8 MB)
+2026-08-15T13:33:06.459Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 6.4 MB/s eta 0:00:00
+2026-08-15T13:33:06.460Z,Project DS2,
+2026-08-15T13:33:06.493Z,Project DS2,Downloading opentelemetry_proto-1.44.0-py3-none-any.whl (72 kB)
+2026-08-15T13:33:06.513Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 72.5/72.5 kB 5.0 MB/s eta 0:00:00
+2026-08-15T13:33:06.514Z,Project DS2,
+2026-08-15T13:33:06.551Z,Project DS2,Downloading pillow-12.3.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (6.9 MB)
+2026-08-15T13:33:07.508Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.9/6.9 MB 7.3 MB/s eta 0:00:00
+2026-08-15T13:33:07.517Z,Project DS2,
+2026-08-15T13:33:07.545Z,Project DS2,Downloading plotly-5.24.1-py3-none-any.whl (19.1 MB)
+2026-08-15T13:33:10.953Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 19.1/19.1 MB 6.0 MB/s eta 0:00:00
+2026-08-15T13:33:10.953Z,Project DS2,
+2026-08-15T13:33:10.984Z,Project DS2,Downloading pluggy-1.6.0-py3-none-any.whl (20 kB)
+2026-08-15T13:33:11.034Z,Project DS2,Downloading pygments-2.20.0-py3-none-any.whl (1.2 MB)
+2026-08-15T13:33:11.217Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 7.1 MB/s eta 0:00:00
+2026-08-15T13:33:11.218Z,Project DS2,
+2026-08-15T13:33:11.264Z,Project DS2,Downloading pyparsing-3.3.2-py3-none-any.whl (122 kB)
+2026-08-15T13:33:11.297Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 122.8/122.8 kB 5.4 MB/s eta 0:00:00
+2026-08-15T13:33:11.298Z,Project DS2,
+2026-08-15T13:33:11.333Z,Project DS2,Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+2026-08-15T13:33:11.380Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 229.9/229.9 kB 5.8 MB/s eta 0:00:00
+2026-08-15T13:33:11.381Z,Project DS2,
+2026-08-15T13:33:11.420Z,Project DS2,Downloading pyyaml-6.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (806 kB)
+2026-08-15T13:33:11.534Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 806.6/806.6 kB 7.6 MB/s eta 0:00:00
+2026-08-15T13:33:11.534Z,Project DS2,
+2026-08-15T13:33:11.565Z,Project DS2,Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+2026-08-15T13:33:11.586Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 73.1/73.1 kB 5.7 MB/s eta 0:00:00
+2026-08-15T13:33:11.586Z,Project DS2,
+2026-08-15T13:33:11.622Z,Project DS2,Downloading rich-15.0.0-py3-none-any.whl (310 kB)
+2026-08-15T13:33:11.667Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 310.7/310.7 kB 9.3 MB/s eta 0:00:00
+2026-08-15T13:33:11.667Z,Project DS2,
+2026-08-15T13:33:11.695Z,Project DS2,Downloading scipy-1.17.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (35.3 MB)
+2026-08-15T13:33:17.927Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.3/35.3 MB 4.7 MB/s eta 0:00:00
+2026-08-15T13:33:17.928Z,Project DS2,
+2026-08-15T13:33:17.970Z,Project DS2,Downloading sklearn_compat-0.1.6-py3-none-any.whl (22 kB)
+2026-08-15T13:33:18.016Z,Project DS2,Downloading starlette-1.6.0-py3-none-any.whl (75 kB)
+2026-08-15T13:33:18.036Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 76.0/76.0 kB 5.8 MB/s eta 0:00:00
+2026-08-15T13:33:18.036Z,Project DS2,
+2026-08-15T13:33:18.070Z,Project DS2,Downloading statsmodels-0.14.6-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (10.4 MB)
+2026-08-15T13:33:19.700Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.4/10.4 MB 6.4 MB/s eta 0:00:00
+2026-08-15T13:33:19.700Z,Project DS2,
+2026-08-15T13:33:19.744Z,Project DS2,Downloading threadpoolctl-3.6.0-py3-none-any.whl (18 kB)
+2026-08-15T13:33:19.777Z,Project DS2,Downloading tqdm-4.70.0-py3-none-any.whl (80 kB)
+2026-08-15T13:33:19.799Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 80.2/80.2 kB 6.9 MB/s eta 0:00:00
+2026-08-15T13:33:19.800Z,Project DS2,
+2026-08-15T13:33:19.833Z,Project DS2,Downloading typer-0.27.1-py3-none-any.whl (122 kB)
+2026-08-15T13:33:19.863Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 122.9/122.9 kB 5.2 MB/s eta 0:00:00
+2026-08-15T13:33:19.864Z,Project DS2,
+2026-08-15T13:33:19.891Z,Project DS2,Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+2026-08-15T13:33:19.907Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.6/45.6 kB 8.8 MB/s eta 0:00:00
+2026-08-15T13:33:19.907Z,Project DS2,
+2026-08-15T13:33:19.949Z,Project DS2,Downloading typing_inspect-0.9.0-py3-none-any.whl (8.8 kB)
+2026-08-15T13:33:20.002Z,Project DS2,Downloading typing_inspection-0.4.4-py3-none-any.whl (14 kB)
+2026-08-15T13:33:20.040Z,Project DS2,Downloading ujson-5.13.0-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (57 kB)
+2026-08-15T13:33:20.069Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.9/57.9 kB 3.2 MB/s eta 0:00:00
+2026-08-15T13:33:20.069Z,Project DS2,
+2026-08-15T13:33:20.097Z,Project DS2,Downloading urllib3-2.7.0-py3-none-any.whl (131 kB)
+2026-08-15T13:33:20.128Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 131.1/131.1 kB 5.7 MB/s eta 0:00:00
+2026-08-15T13:33:20.129Z,Project DS2,
+2026-08-15T13:33:20.162Z,Project DS2,Downloading uuid6-2025.0.1-py3-none-any.whl (7.0 kB)
+2026-08-15T13:33:20.200Z,Project DS2,Downloading watchdog-6.0.0-py3-none-manylinux2014_x86_64.whl (79 kB)
+2026-08-15T13:33:20.225Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 79.1/79.1 kB 4.1 MB/s eta 0:00:00
+2026-08-15T13:33:20.226Z,Project DS2,
+2026-08-15T13:33:20.265Z,Project DS2,Downloading cloudpickle-3.1.2-py3-none-any.whl (22 kB)
+2026-08-15T13:33:20.305Z,Project DS2,Downloading llvmlite-0.49.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (59.9 MB)
+2026-08-15T13:33:29.898Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 59.9/59.9 MB 6.4 MB/s eta 0:00:00
+2026-08-15T13:33:29.899Z,Project DS2,
+2026-08-15T13:33:29.934Z,Project DS2,Downloading numba-0.67.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (3.8 MB)
+2026-08-15T13:33:30.591Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.8/3.8 MB 6.0 MB/s eta 0:00:00
+2026-08-15T13:33:30.591Z,Project DS2,
+2026-08-15T13:33:30.642Z,Project DS2,Downloading nvidia_nccl_cu12-2.31.2-py3-none-manylinux_2_18_x86_64.whl (342.1 MB)
+2026-08-15T13:34:29.030Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 342.1/342.1 MB 6.3 MB/s eta 0:00:00
+2026-08-15T13:34:29.082Z,Project DS2,Downloading cffi-2.1.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (217 kB)
+2026-08-15T13:34:29.127Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 217.8/217.8 kB 6.3 MB/s eta 0:00:00
+2026-08-15T13:34:29.128Z,Project DS2,
+2026-08-15T13:34:29.166Z,Project DS2,Downloading charset_normalizer-3.5.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (262 kB)
+2026-08-15T13:34:29.243Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 262.3/262.3 kB 3.8 MB/s eta 0:00:00
+2026-08-15T13:34:29.243Z,Project DS2,
+2026-08-15T13:34:29.280Z,Project DS2,Downloading httptools-0.8.0-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (464 kB)
+2026-08-15T13:34:29.370Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 464.7/464.7 kB 6.0 MB/s eta 0:00:00
+2026-08-15T13:34:29.370Z,Project DS2,
+2026-08-15T13:34:29.411Z,Project DS2,Downloading litestar_htmx-0.5.0-py3-none-any.whl (10.0 kB)
+2026-08-15T13:34:29.447Z,Project DS2,Downloading markdown_it_py-4.2.0-py3-none-any.whl (91 kB)
+2026-08-15T13:34:29.465Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 91.7/91.7 kB 9.7 MB/s eta 0:00:00
+2026-08-15T13:34:29.465Z,Project DS2,
+2026-08-15T13:34:29.498Z,Project DS2,Downloading msgspec-0.21.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (219 kB)
+2026-08-15T13:34:29.527Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 219.9/219.9 kB 10.5 MB/s eta 0:00:00
+2026-08-15T13:34:29.528Z,Project DS2,
+2026-08-15T13:34:29.565Z,Project DS2,Downloading multidict-6.7.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (246 kB)
+2026-08-15T13:34:29.606Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 246.3/246.3 kB 7.5 MB/s eta 0:00:00
+2026-08-15T13:34:29.606Z,Project DS2,
+2026-08-15T13:34:29.661Z,Project DS2,Downloading multipart-2.0.0-py3-none-any.whl (16 kB)
+2026-08-15T13:34:29.703Z,Project DS2,Downloading mypy_extensions-1.1.0-py3-none-any.whl (5.0 kB)
+2026-08-15T13:34:29.733Z,Project DS2,Downloading patsy-1.0.2-py2.py3-none-any.whl (233 kB)
+2026-08-15T13:34:29.775Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 233.3/233.3 kB 8.7 MB/s eta 0:00:00
+2026-08-15T13:34:29.776Z,Project DS2,
+2026-08-15T13:34:29.818Z,Project DS2,Downloading polyfactory-3.3.0-py3-none-any.whl (62 kB)
+2026-08-15T13:34:29.859Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.7/62.7 kB 2.3 MB/s eta 0:00:00
+2026-08-15T13:34:29.860Z,Project DS2,
+2026-08-15T13:34:29.901Z,Project DS2,Downloading protobuf-7.35.1-cp310-abi3-manylinux2014_x86_64.whl (327 kB)
+2026-08-15T13:34:29.986Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 327.1/327.1 kB 4.1 MB/s eta 0:00:00
+2026-08-15T13:34:29.987Z,Project DS2,
+2026-08-15T13:34:30.026Z,Project DS2,Downloading pyarrow-25.0.1-cp311-cp311-manylinux_2_28_x86_64.whl (50.1 MB)
+2026-08-15T13:34:39.246Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 50.1/50.1 MB 6.0 MB/s eta 0:00:00
+2026-08-15T13:34:39.247Z,Project DS2,
+2026-08-15T13:34:39.292Z,Project DS2,Downloading python_dotenv-1.2.2-py3-none-any.whl (22 kB)
+2026-08-15T13:34:39.343Z,Project DS2,Downloading regex-2026.7.19-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (801 kB)
+2026-08-15T13:34:39.463Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 801.4/801.4 kB 7.1 MB/s eta 0:00:00
+2026-08-15T13:34:39.463Z,Project DS2,
+2026-08-15T13:34:39.495Z,Project DS2,Downloading shellingham-1.5.4-py2.py3-none-any.whl (9.8 kB)
+2026-08-15T13:34:39.561Z,Project DS2,Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+2026-08-15T13:34:39.608Z,Project DS2,Downloading sniffio-1.3.1-py3-none-any.whl (10 kB)
+2026-08-15T13:34:39.655Z,Project DS2,Downloading tenacity-9.1.4-py3-none-any.whl (28 kB)
+2026-08-15T13:34:39.696Z,Project DS2,Downloading uvloop-0.22.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (3.8 MB)
+2026-08-15T13:34:40.286Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.8/3.8 MB 6.5 MB/s eta 0:00:00
+2026-08-15T13:34:40.289Z,Project DS2,
+2026-08-15T13:34:40.330Z,Project DS2,Downloading watchfiles-1.2.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (456 kB)
+2026-08-15T13:34:40.394Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 456.9/456.9 kB 7.9 MB/s eta 0:00:00
+2026-08-15T13:34:40.395Z,Project DS2,
+2026-08-15T13:34:40.431Z,Project DS2,Downloading websockets-17.0.1-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (219 kB)
+2026-08-15T13:34:40.565Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 219.9/219.9 kB 1.8 MB/s eta 0:00:00
+2026-08-15T13:34:40.566Z,Project DS2,
+2026-08-15T13:34:40.623Z,Project DS2,Downloading appdirs-1.4.4-py2.py3-none-any.whl (9.6 kB)
+2026-08-15T13:34:40.702Z,Project DS2,Downloading defusedxml-0.7.1-py2.py3-none-any.whl (25 kB)
+2026-08-15T13:34:40.800Z,Project DS2,Downloading distro-1.9.0-py3-none-any.whl (20 kB)
+2026-08-15T13:34:40.848Z,Project DS2,Downloading filelock-3.32.3-py3-none-any.whl (98 kB)
+2026-08-15T13:34:40.948Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 98.9/98.9 kB 1.2 MB/s eta 0:00:00
+2026-08-15T13:34:40.986Z,Project DS2,Downloading rich_click-1.9.8-py3-none-any.whl (72 kB)
+2026-08-15T13:34:41.032Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 72.2/72.2 kB 2.7 MB/s eta 0:00:00
+2026-08-15T13:34:41.033Z,Project DS2,
+2026-08-15T13:34:41.082Z,Project DS2,Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+2026-08-15T13:34:41.122Z,Project DS2,Downloading pycparser-3.0-py3-none-any.whl (48 kB)
+2026-08-15T13:34:41.147Z,Project DS2,━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.2/48.2 kB 4.6 MB/s eta 0:00:00
+2026-08-15T13:34:41.148Z,Project DS2,
+2026-08-15T13:34:46.742Z,Project DS2,"Installing collected packages: appdirs, websockets, watchdog, uvloop, uuid6, urllib3, ujson, typing-extensions, tqdm, threadpoolctl, tenacity, sniffio, slicer, six, shellingham, regex, pyyaml, python-dotenv, pyparsing, pygments, pycparser, pyarrow, protobuf, pluggy, pillow, nvidia-nccl-cu12, numpy, narwhals, mypy-extensions, multipart, multidict, msgspec, mdurl, llvmlite, litestar-htmx, kiwisolver, joblib, iniconfig, idna, httptools, h11, fsspec, fonttools, filelock, faker, dynaconf, distro, deprecation, defusedxml, cycler, cloudpickle, click, charset_normalizer, certifi, annotated-types, annotated-doc, uvicorn, typing-inspection, typing-inspect, scipy, requests, python-dateutil, pytest, pydantic-core, polyfactory, plotly, patsy, opentelemetry-proto, numba, nltk, markdown-it-py, httpcore, contourpy, cffi, anyio, xgboost, watchfiles, starlette, scikit-learn, rich, pydantic, pandas, matplotlib, iterative-telemetry, httpx, cryptography, typer, statsmodels, sklearn-compat, shap, seaborn, rich-click, fastapi, litestar, imbalanced-learn, evidently"
+2026-08-15T13:36:57.380Z,Project DS2,Successfully installed annotated-doc-0.0.5 annotated-types-0.8.0 anyio-4.14.2 appdirs-1.4.4 certifi-2026.7.22 cffi-2.1.1 charset_normalizer-3.5.1 click-8.4.2 cloudpickle-3.1.2 contourpy-1.3.3 cryptography-50.0.0 cycler-0.12.1 defusedxml-0.7.1 deprecation-2.1.0 distro-1.9.0 dynaconf-3.3.5 evidently-0.7.21 faker-40.36.0 fastapi-0.141.1 filelock-3.32.3 fonttools-4.63.0 fsspec-2026.7.0 h11-0.16.0 httpcore-1.0.9 httptools-0.8.0 httpx-0.28.1 idna-3.18 imbalanced-learn-0.14.2 iniconfig-2.3.0 iterative-telemetry-0.0.10 joblib-1.5.3 kiwisolver-1.5.0 litestar-2.24.0 litestar-htmx-0.5.0 llvmlite-0.49.0 markdown-it-py-4.2.0 matplotlib-3.11.1 mdurl-0.1.2 msgspec-0.21.1 multidict-6.7.1 multipart-2.0.0 mypy-extensions-1.1.0 narwhals-2.24.0 nltk-3.10.3 numba-0.67.0 numpy-2.4.6 nvidia-nccl-cu12-2.31.2 opentelemetry-proto-1.44.0 pandas-3.0.5 patsy-1.0.2 pillow-12.3.0 plotly-5.24.1 pluggy-1.6.0 polyfactory-3.3.0 protobuf-7.35.1 pyarrow-25.0.1 pycparser-3.0 pydantic-2.13.4 pydantic-core-2.46.4 pygments-2.20.0 pyparsing-3.3.2 pytest-9.1.1 python-dateutil-2.9.0.post0 python-dotenv-1.2.2 pyyaml-6.0.3 regex-2026.7.19 requests-2.34.2 rich-15.0.0 rich-click-1.9.8 scikit-learn-1.9.0 scipy-1.17.1 seaborn-0.13.2 shap-0.51.0 shellingham-1.5.4 six-1.17.0 sklearn-compat-0.1.6 slicer-0.0.8 sniffio-1.3.1 starlette-1.6.0 statsmodels-0.14.6 tenacity-9.1.4 threadpoolctl-3.6.0 tqdm-4.70.0 typer-0.27.1 typing-extensions-4.16.0 typing-inspect-0.9.0 typing-inspection-0.4.4 ujson-5.13.0 urllib3-2.7.0 uuid6-2025.0.1 uvicorn-0.52.3 uvloop-0.22.1 watchdog-6.0.0 watchfiles-1.2.0 websockets-17.0.1 xgboost-3.2.0
+2026-08-15T13:36:57.381Z,Project DS2,WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+2026-08-15T13:36:57.834Z,Project DS2,
+2026-08-15T13:36:57.834Z,Project DS2,[notice] A new release of pip is available: 24.0 -> 26.2.1
+2026-08-15T13:36:57.834Z,Project DS2,"[notice] To update, run: pip install --upgrade pip"
+2026-08-15T13:43:07.680Z,elastic_goldberg,"/app/api/main.py:27: UserWarning: [13:43:07] WARNING: /__w/xgboost/xgboost/src/collective/../data/../common/error_msg.h:83: If you are loading a serialized model (like pickle in Python, RDS in R) or"
+2026-08-15T13:43:07.680Z,elastic_goldberg,"configuration generated by an older version of XGBoost, please export the model by calling"
+2026-08-15T13:43:07.680Z,elastic_goldberg,"`Booster.save_model` from that version first, then load it back in current version. See:"
+2026-08-15T13:43:07.680Z,elastic_goldberg,
+2026-08-15T13:43:07.680Z,elastic_goldberg,    https://xgboost.readthedocs.io/en/stable/tutorials/saving_model.html
+2026-08-15T13:43:07.680Z,elastic_goldberg,
+2026-08-15T13:43:07.680Z,elastic_goldberg,for more details about differences between saving model and serializing.
+2026-08-15T13:43:07.680Z,elastic_goldberg,
+2026-08-15T13:43:07.680Z,elastic_goldberg,  artifact = pickle.load(f)
+2026-08-15T13:43:08.064Z,elastic_goldberg,INFO:     Started server process [1]
+2026-08-15T13:43:08.065Z,elastic_goldberg,INFO:     Waiting for application startup.
+2026-08-15T13:43:08.068Z,elastic_goldberg,INFO:     Application startup complete.
+2026-08-15T13:43:08.079Z,elastic_goldberg,INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2026-08-15T13:44:19.911Z,elastic_goldberg,"INFO:     172.17.0.1:35870 - ""GET /docs HTTP/1.1"" 200 OK"
+2026-08-15T13:44:20.524Z,elastic_goldberg,"INFO:     172.17.0.1:35870 - ""GET /openapi.json HTTP/1.1"" 200 OK"
+2026-08-15T13:44:34.423Z,elastic_goldberg,"INFO:     172.17.0.1:35876 - ""GET / HTTP/1.1"" 200 OK"
+2026-08-15T13:57:17.845Z,elastic_goldberg,"INFO:     172.17.0.1:50058 - ""POST /predict HTTP/1.1"" 200 OK"
+2026-08-15T13:57:20.626Z,elastic_goldberg,"INFO:     172.17.0.1:50058 - ""POST /predict HTTP/1.1"" 200 OK"
+2026-08-15T13:58:07.154Z,elastic_goldberg,"INFO:     172.17.0.1:32992 - ""POST /predict HTTP/1.1"" 200 OK"
